@@ -1,0 +1,29 @@
+This is a number of helper tools to maintain the openSUSE Tumbleweed
+project.
+
+It contains some informational files detailing where the different
+projects come from (i.e. where they are linked from) and some scripts to
+help update and maintain the distro over time.
+
+For more details about what openSUSE Tumbleweed is, please see:
+	http://lists.opensuse.org/opensuse-project/2010-11/msg00206.html
+for the original project announcement.
+
+It can be used today by taking an openSUSE 11.3 release and adding the
+openSUSE:Tumbleweed repository to the list of repositories to pull from
+and then doing 'zypper dup' to update to the latest version of the
+packages.
+
+WARNING!!!!
+
+ At this point in time, the Tumbleweed repository is under heavy
+ development and is only recommended for people who are comfortable
+ handling different repositories on their openSUSE install and can
+ roll packages back if problems happen.  By the time openSUSE 11.4 comes
+ out, this should all be worked out and in much better shape.  I
+ recommend coming back then unless you are very daring.
+
+
+Any questions/comments/flames should be sent to:
+	Greg Kroah-Hartman <gregkh@suse.de>
+
