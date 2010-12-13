@@ -1,0 +1,40 @@
+Packages and where they come from:
+
+Kernel:stable
+	The kernel is wierd, only update the kernel-source package, all
+	others are linked to it and will automatically rebuild on their
+	own.
+
+	kernel-source
+	preload
+	systemtap
+	elfutils
+
+	links:
+		kernel-debug
+		kernel-default
+		kernel-desktop
+		kernel-docs
+		kernel-ec2
+		kernel-pae
+		kernel-syms
+		kernel-trace
+		kernel-vanilla
+		kernel-vmi
+		kernel-xen
+
+
+home:tiwai
+	git
+
+
+Factory
+	usbutils
+
+network:samba:STABLE
+	cifs-utils
+	ctdb
+	keyutils
+	libiniparser
+	samba
+	samba-doc
