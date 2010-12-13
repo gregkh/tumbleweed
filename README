@@ -9,6 +9,8 @@ For more details about what openSUSE Tumbleweed is, please see:
 	http://lists.opensuse.org/opensuse-project/2010-11/msg00206.html
 for the original project announcement.
 
+To quote one developer, "Tumbleweed is FACTORY on barbiturates".
+
 It can be used today by taking an openSUSE 11.3 release and adding the
 openSUSE:Tumbleweed repository to the list of repositories to pull from
 and then doing 'zypper dup' to update to the latest version of the
