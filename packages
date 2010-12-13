@@ -7,8 +7,8 @@ Kernel:stable
 
 	kernel-source
 	preload
-	systemtap
-	elfutils
+		systemtap
+		elfutils
 
 	links:
 		kernel-debug
@@ -28,7 +28,10 @@ home:tiwai
 	git
 
 
-Factory
+openSUSE:Factory
+	mkvtoolnix
+		libebml
+		libmatroska
 	usbutils
 
 network:samba:STABLE
@@ -40,7 +43,8 @@ network:samba:STABLE
 	samba-doc
 
 
-stuff in openSUSE:Tumbleweed:Testing as I can't figure out if this is a good place to stage stuff or not:
+stuff in openSUSE:Tumbleweed:Testing as I can't figure out if this is a good
+place to stage stuff or not:
 
 Apache
 	libapr1
