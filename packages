@@ -42,6 +42,9 @@ network:samba:STABLE
 	samba
 	samba-doc
 
+filesystems
+	fuse
+
 
 stuff in openSUSE:Tumbleweed:Testing as I can't figure out if this is a good
 place to stage stuff or not:
