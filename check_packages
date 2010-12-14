@@ -1,0 +1,49 @@
+#!/bin/bash
+
+TUMBLE_REPO="openSUSE:Tumbleweed"
+
+
+# expects:
+#	$PACKAGE to be set to the package name to be checked
+#	$REPO to be set to the base repo name
+compare_version() {
+
+	EXISTING=`osc cat $TUMBLE_REPO/$PACKAGE/_link | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
+	#echo $EXISTING
+
+	NEW=`osc log --csv $REPO/$PACKAGE | head -n 1 | cut -f 4 -d '|'`
+	#echo $NEW
+
+	if [ $NEW = $EXISTING ]
+	then
+		echo "# $PACKAGE is up to date."
+	else
+		echo "osc linkpac -f -r $NEW $REPO $PACKAGE $TUMBLE_REPO"
+	fi
+}
+
+# expects:
+#	$PACKAGES to be a list of packages to be checked
+#	$REPO to be set to the base repo name
+compare_versions() {
+	for PACKAGE in $PACKAGES
+	do
+		compare_version
+	done
+}
+
+
+REPO="Kernel:stable"
+PACKAGES="kernel-source preload systemtap elfutils"
+compare_versions
+
+REPO="openSUSE:Factory"
+PACKAGES="usbutils mkvtoolnix libebml libmatroska"
+compare_versions
+
+REPO="network:samba:STABLE"
+PACKAGES="cifs-utils ctdb keyutils libiniparser samba samba-doc"
+compare_versions
+
+REPO="home:tiwai"
+PACKAGES="git"
