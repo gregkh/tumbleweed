@@ -11,7 +11,7 @@ compare_version() {
 	EXISTING=`osc cat $TUMBLE_REPO/$PACKAGE/_link | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
 	#echo $EXISTING
 
-	NEW=`osc log --csv $REPO/$PACKAGE | head -n 1 | cut -f 4 -d '|'`
+	NEW=`osc log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
 	#echo $NEW
 
 	if [ $NEW = $EXISTING ]
@@ -47,3 +47,9 @@ compare_versions
 
 REPO="home:tiwai"
 PACKAGES="git"
+compare_versions
+
+REPO="filesystems"
+PACKAGES="fuse"
+compare_versions
+
