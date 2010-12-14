@@ -53,3 +53,6 @@ Apache
 
 Stuff submitreq to be accepted:
 	bluez
+	mozilla:Factory/MozillaThunderbird
+	mozilla:Factory/mozilla-nss
+	mozilla:Factory/mozilla-nspr
