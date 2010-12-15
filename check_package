@@ -4,27 +4,15 @@
 # (C) 2010 Greg Kroah-Hartman <gregkh@suse.de>
 # Released under the GPL v2.
 #
-# This script checks the links that are set up for a number of
-# Tumbleweed packages.  Tumbleweed works either by having packages
-# submitted to it, or by linking to a "known stable" repository in the
-# build service.  This script checks the packages that are links and
-# verifies that they are up to date.  If they are not up to date, the
-# proper 'osc' command is printed to output to be run by hand if
-# necessary.
+# This script checks the links that are set up for a single Tumbleweed package.
+# Tumbleweed works either by having packages submitted to it, or by linking to
+# a "known stable" repository in the build service.  This script checks the
+# repo and package name requested on the command line and verifies that they
+# are up to date.  If they are not up to date, the proper 'osc' command is
+# printed to output to be run by hand if necessary.
 #
-# You can also use this script to create linked packages by adding them
-# to the tool, ignoring the error messages when osc tries to find the
-# package, and then running the 'osc' command to create the necessary
-# link.
-#
-# To use this script, go to the bottom, add the repo and packages in
-# that repo like the existing ones, and then call "compare_versions" to
-# check the packages.
-#
-# TODO:
-# 	- possibly accept the packages and repos as an add-on file, or
-# 	  on the command line to make it a bit more flexible and faster
-# 	  instead of checking all packages all the time.
+# If the package is not in the Tumbleweed repo, the proper 'osc' command
+# to add it is printed out if you wish to run it.
 #
 # Any questions/comments/patches are gladly welcome, just send to:
 #	Greg Kroah-Hartman <gregkh@suse.de>
@@ -39,11 +27,16 @@ TUMBLE_REPO="openSUSE:Tumbleweed"
 #	$REPO to be set to the base repo name
 compare_version() {
 
-	EXISTING=`osc cat $TUMBLE_REPO/$PACKAGE/_link | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
+	EXISTING=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
 	#echo $EXISTING
 
 	NEW=`osc log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
 	#echo $NEW
+
+	if [ "$EXISTING" = "" ]
+	then
+		echo "# $PACKAGE is not in Tumbleweed, add it by doing:"
+	fi
 
 	if [ "$NEW" = "$EXISTING" ]
 	then

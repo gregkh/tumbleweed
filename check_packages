@@ -13,18 +13,18 @@
 # necessary.
 #
 # You can also use this script to create linked packages by adding them
-# to the tool, ignoring the error messages when osc tries to find the
-# package, and then running the 'osc' command to create the necessary
-# link.
+# to the tool, and then running the 'osc' command printed out to create
+# the necessary link.
 #
 # To use this script, go to the bottom, add the repo and packages in
 # that repo like the existing ones, and then call "compare_versions" to
 # check the packages.
 #
 # TODO:
-# 	- possibly accept the packages and repos as an add-on file, or
-# 	  on the command line to make it a bit more flexible and faster
-# 	  instead of checking all packages all the time.
+# 	- Possibly accept the packages and repos as an add-on file, to
+# 	  make it a bit more flexible and faster instead of checking all
+# 	  packages all the time.  Possibliy use the check_package script
+# 	  which does handle this from the command line instead.
 #
 # Any questions/comments/patches are gladly welcome, just send to:
 #	Greg Kroah-Hartman <gregkh@suse.de>
@@ -39,11 +39,16 @@ TUMBLE_REPO="openSUSE:Tumbleweed"
 #	$REPO to be set to the base repo name
 compare_version() {
 
-	EXISTING=`osc cat $TUMBLE_REPO/$PACKAGE/_link | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
+	EXISTING=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
 	#echo $EXISTING
 
 	NEW=`osc log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
 	#echo $NEW
+
+	if [ "$EXISTING" = "" ]
+	then
+		echo "# $PACKAGE is not in Tumbleweed, add it by doing:"
+	fi
 
 	if [ "$NEW" = "$EXISTING" ]
 	then
@@ -94,4 +99,8 @@ compare_versions
 
 REPO="Apache"
 PACKAGES="apache2 libapr1 GeoIP"
+compare_versions
+
+REPO="server:mail"
+PACKAGES="offlineimap"
 compare_versions
