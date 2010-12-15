@@ -44,6 +44,17 @@ network:samba:STABLE
 	samba
 	samba-doc
 
+security:OpenVAS:STABLE:v3
+	gsd
+	greenbone-security-assistant
+	libmicrohttpd
+	openvas-administrator
+	openvas-cli
+	openvas-client
+	openvas-libraries
+	openvas-manager
+	openvas-scanner
+
 filesystems
 	fuse
 
