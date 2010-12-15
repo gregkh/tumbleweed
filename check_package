@@ -1,0 +1,70 @@
+#!/bin/bash
+
+# A script to help manage the openSUSE:Tumbleweed project
+# (C) 2010 Greg Kroah-Hartman <gregkh@suse.de>
+# Released under the GPL v2.
+#
+# This script checks the links that are set up for a number of
+# Tumbleweed packages.  Tumbleweed works either by having packages
+# submitted to it, or by linking to a "known stable" repository in the
+# build service.  This script checks the packages that are links and
+# verifies that they are up to date.  If they are not up to date, the
+# proper 'osc' command is printed to output to be run by hand if
+# necessary.
+#
+# You can also use this script to create linked packages by adding them
+# to the tool, ignoring the error messages when osc tries to find the
+# package, and then running the 'osc' command to create the necessary
+# link.
+#
+# To use this script, go to the bottom, add the repo and packages in
+# that repo like the existing ones, and then call "compare_versions" to
+# check the packages.
+#
+# TODO:
+# 	- possibly accept the packages and repos as an add-on file, or
+# 	  on the command line to make it a bit more flexible and faster
+# 	  instead of checking all packages all the time.
+#
+# Any questions/comments/patches are gladly welcome, just send to:
+#	Greg Kroah-Hartman <gregkh@suse.de>
+#
+
+# Main Tumbleweed repository location
+TUMBLE_REPO="openSUSE:Tumbleweed"
+
+
+# expects:
+#	$PACKAGE to be set to the package name to be checked
+#	$REPO to be set to the base repo name
+compare_version() {
+
+	EXISTING=`osc cat $TUMBLE_REPO/$PACKAGE/_link | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
+	#echo $EXISTING
+
+	NEW=`osc log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
+	#echo $NEW
+
+	if [ "$NEW" = "$EXISTING" ]
+	then
+		echo "# $PACKAGE is up to date."
+	else
+		echo "osc linkpac -f -r $NEW $REPO $PACKAGE $TUMBLE_REPO"
+	fi
+}
+
+if [ $# -ne 1 ]; then
+	echo -e "Usage:\t $0 repo/packagename\ne.g.\t $0 Kernel:stable/kernel-source"
+	exit 1
+fi
+
+
+FULL_PACKAGE=$1
+
+# I'm sure that bash regex can do this better, but hey, this works...
+REPO=`echo $FULL_PACKAGE | cut -f 1 -d '/'`
+PACKAGE=`echo $FULL_PACKAGE | cut -f 2 -d '/'`
+#echo $REPO
+#echo $PACKAGE
+
+compare_version
