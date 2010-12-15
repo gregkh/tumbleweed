@@ -58,14 +58,11 @@ security:OpenVAS:STABLE:v3
 filesystems
 	fuse
 
-
-stuff in openSUSE:Tumbleweed:Testing as I can't figure out if this is a good
-place to stage stuff or not:
-
 Apache
 	libapr1
 	GeoIP
 	apache2
+
 
 Stuff submitreq to be accepted:
 	bluez
