@@ -63,6 +63,8 @@ Apache
 	GeoIP
 	apache2
 
+server:mail
+	offlineimap
 
 Stuff submitreq to be accepted:
 	bluez
