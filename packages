@@ -25,7 +25,9 @@ Kernel:stable
 
 
 home:tiwai
+devel:tools:scm
 	git
+	tig
 
 
 openSUSE:Factory

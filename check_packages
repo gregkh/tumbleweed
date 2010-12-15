@@ -45,8 +45,9 @@ REPO="network:samba:STABLE"
 PACKAGES="cifs-utils ctdb keyutils libiniparser samba samba-doc"
 compare_versions
 
-REPO="home:tiwai"
-PACKAGES="git"
+#REPO="home:tiwai"
+REPO="devel:tools:scm"
+PACKAGES="git tig"
 compare_versions
 
 REPO="filesystems"
