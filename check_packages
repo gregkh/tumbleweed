@@ -92,4 +92,6 @@ REPO="security:OpenVAS:STABLE:v3"
 PACKAGES="gsd greenbone-security-assistant libmicrohttpd openvas-administrator openvas-cli openvas-client openvas-libraries openvas-manager openvas-scanner"
 compare_versions
 
-
+REPO="Apache"
+PACKAGES="apache2 libapr1 GeoIP"
+compare_versions
