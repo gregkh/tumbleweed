@@ -6,6 +6,7 @@ Kernel:stable
 	own.
 
 	kernel-source
+	kernel-firmware
 	preload
 		systemtap
 		elfutils
@@ -35,6 +36,7 @@ openSUSE:Factory
 		libebml
 		libmatroska
 	usbutils
+	virtualbox-ose
 
 network:samba:STABLE
 	cifs-utils

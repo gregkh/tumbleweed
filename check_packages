@@ -74,11 +74,11 @@ compare_versions() {
 #
 
 REPO="Kernel:stable"
-PACKAGES="kernel-source preload systemtap elfutils"
+PACKAGES="kernel-source kernel-firmware preload systemtap elfutils"
 compare_versions
 
 REPO="openSUSE:Factory"
-PACKAGES="usbutils mkvtoolnix libebml libmatroska"
+PACKAGES="usbutils mkvtoolnix libebml libmatroska virtualbox-ose"
 compare_versions
 
 REPO="network:samba:STABLE"
