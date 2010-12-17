@@ -4,103 +4,20 @@
 # (C) 2010 Greg Kroah-Hartman <gregkh@suse.de>
 # Released under the GPL v2.
 #
-# This script checks the links that are set up for a number of
-# Tumbleweed packages.  Tumbleweed works either by having packages
-# submitted to it, or by linking to a "known stable" repository in the
-# build service.  This script checks the packages that are links and
-# verifies that they are up to date.  If they are not up to date, the
-# proper 'osc' command is printed to output to be run by hand if
-# necessary.
-#
-# You can also use this script to create linked packages by adding them
-# to the tool, and then running the 'osc' command printed out to create
-# the necessary link.
-#
-# To use this script, go to the bottom, add the repo and packages in
-# that repo like the existing ones, and then call "compare_versions" to
-# check the packages.
-#
-# TODO:
-# 	- Possibly accept the packages and repos as an add-on file, to
-# 	  make it a bit more flexible and faster instead of checking all
-# 	  packages all the time.  Possibliy use the check_package script
-# 	  which does handle this from the command line instead.
+# This script reads the file 'package_list' and runs 'check_package'
+# on all of the packages listed in it.
 #
 # Any questions/comments/patches are gladly welcome, just send to:
 #	Greg Kroah-Hartman <gregkh@suse.de>
 #
 
-# Main Tumbleweed repository location
-TUMBLE_REPO="openSUSE:Tumbleweed"
-
-
-# expects:
-#	$PACKAGE to be set to the package name to be checked
-#	$REPO to be set to the base repo name
-compare_version() {
-
-	EXISTING=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
-	#echo $EXISTING
-
-	NEW=`osc log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
-	#echo $NEW
-
-	if [ "$EXISTING" = "" ]
+while read line
+do
+	# remove lines that start with a # and all whitespace in the line
+	line=`echo $line | sed -e '/^#/d' | sed -e 's/^[ \t]*//;s/[ \t]*$//'`
+	if [ "$line" != "" ]
 	then
-		echo "# $PACKAGE is not in Tumbleweed, add it by doing:"
+		./check_package $line
 	fi
+done < package_list
 
-	if [ "$NEW" = "$EXISTING" ]
-	then
-		echo "# $PACKAGE is up to date."
-	else
-		echo "osc linkpac -f -r $NEW $REPO $PACKAGE $TUMBLE_REPO"
-	fi
-}
-
-# expects:
-#	$PACKAGES to be a list of packages to be checked
-#	$REPO to be set to the base repo name
-compare_versions() {
-	for PACKAGE in $PACKAGES
-	do
-		compare_version
-	done
-}
-
-#
-# Change things here.  Add new repositories and packages at the end and
-# then call "compare_versions"
-#
-
-REPO="Kernel:stable"
-PACKAGES="kernel-source kernel-firmware preload systemtap elfutils"
-compare_versions
-
-REPO="openSUSE:Factory"
-PACKAGES="usbutils mkvtoolnix libebml libmatroska virtualbox-ose"
-compare_versions
-
-REPO="network:samba:STABLE"
-PACKAGES="cifs-utils ctdb keyutils libiniparser samba samba-doc"
-compare_versions
-
-REPO="devel:tools:scm"
-PACKAGES="git tig"
-compare_versions
-
-REPO="filesystems"
-PACKAGES="fuse"
-compare_versions
-
-REPO="security:OpenVAS:STABLE:v3"
-PACKAGES="gsd greenbone-security-assistant libmicrohttpd openvas-administrator openvas-cli openvas-client openvas-libraries openvas-manager openvas-scanner"
-compare_versions
-
-REPO="Apache"
-PACKAGES="apache2 libapr1 GeoIP"
-compare_versions
-
-REPO="server:mail"
-PACKAGES="offlineimap"
-compare_versions

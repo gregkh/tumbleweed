@@ -1,0 +1,91 @@
+# This is a list of the source of the packages that are links in the
+# openSUSE:Tumbleweed repo.
+#
+# The check_packages script takes this list and runs it through the
+# 'check_package' script to see if the link is up to date or not.
+#
+# Lines starting with a '#' are ignored, as is whitespace.
+#
+
+#
+# Kernel
+#
+# The kernel package has one main package:
+Kernel:stable/kernel-source
+# Then the rest of the kernel packages are just links to that one in
+# order to handle the multiple parts of it.  This means the following
+# list of packages should not be touched at all, they get automatically
+# generated:
+#
+# kernel-debug
+# kernel-default
+# kernel-desktop
+# kernel-docs
+# kernel-ec2
+# kernel-pae
+# kernel-syms
+# kernel-trace
+# kernel-vanilla
+# kernel-vmi
+# kernel-xen
+
+Kernel:stable/kernel-firmware
+Kernel:stable/preload
+# preload wants a new systemtap and elfutils package as well:
+Kernel:stable/systemtap
+Kernel:stable/elfutils
+
+
+#
+# Packages linked from Factory:
+#
+openSUSE:Factory/usbutils
+openSUSE:Factory/mkvtoolnix
+openSUSE:Factory/libebml
+openSUSE:Factory/libmatroska
+openSUSE:Factory/virtualbox-ose
+
+#
+# Latest "stable" samba packages:
+#
+network:samba:STABLE/cifs-utils
+network:samba:STABLE/ctdb
+network:samba:STABLE/libiniparser
+network:samba:STABLE/samba
+network:samba:STABLE/samba-doc
+
+#
+# git is good
+#
+devel:tools:scm/git
+devel:tools:scm/tig
+
+#
+# fuse is also nice to keep up to date
+#
+filesystems/fuse
+
+#
+# Latest "stable" openvas:
+#
+security:OpenVAS:STABLE:v3/gsd
+security:OpenVAS:STABLE:v3/greenbone-security-assistant
+security:OpenVAS:STABLE:v3/libmicrohttpd
+security:OpenVAS:STABLE:v3/openvas-administrator
+security:OpenVAS:STABLE:v3/openvas-cli
+security:OpenVAS:STABLE:v3/openvas-client
+security:OpenVAS:STABLE:v3/openvas-libraries
+security:OpenVAS:STABLE:v3/openvas-manager
+security:OpenVAS:STABLE:v3/openvas-scanner
+
+#
+# Latest "stable" apache2
+#
+Apache/apache2
+Apache/libapr1
+Apache/GeoIP
+
+#
+# can't live without offlineimap
+#
+server:mail/offlineimap
