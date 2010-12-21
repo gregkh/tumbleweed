@@ -69,7 +69,6 @@ filesystems/fuse
 # Latest "stable" openvas:
 #
 security:OpenVAS:STABLE:v3/gsd
-security:OpenVAS:STABLE:v3/greenbone-security-assistant
 security:OpenVAS:STABLE:v3/libmicrohttpd
 security:OpenVAS:STABLE:v3/openvas-administrator
 security:OpenVAS:STABLE:v3/openvas-cli
