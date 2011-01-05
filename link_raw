@@ -1,0 +1,88 @@
+#!/bin/bash
+
+# A script to help manage the openSUSE:Tumbleweed project
+# (C) 2010 Greg Kroah-Hartman <gregkh@suse.de>
+# Released under the GPL v2.
+#
+# This script checks the links that are set up for a single Tumbleweed package.
+# Tumbleweed works either by having packages submitted to it, or by linking to
+# a "known stable" repository in the build service.  This script checks the
+# repo and package name requested on the command line and verifies that they
+# are up to date.  If they are not up to date, the proper 'osc' command is
+# printed to output to be run by hand if necessary.
+#
+# If the package is not in the Tumbleweed repo, the proper 'osc' command
+# to add it is printed out if you wish to run it.
+#
+# Any questions/comments/patches are gladly welcome, just send to:
+#	Greg Kroah-Hartman <gregkh@suse.de>
+#
+
+# Main Tumbleweed repository location
+TUMBLE_REPO="openSUSE:Tumbleweed:Raw"
+
+
+# expects:
+#	$PACKAGE to be set to the package name to be checked
+#	$REPO to be set to the base repo name
+compare_version() {
+
+	BASE_LINK=`osc log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
+	#echo $BASE_LINK
+
+	if [ "$BASE_LINK" = "" ]
+	then
+		echo "# There is no such package as $REPO/$PACKAGE."
+		return
+	fi
+
+#	EXIST=`osc ls $TUMBLE_REPO | grep $PACKAGE`
+	EXIST=`grep $PACKAGE package_list.$TUMBLE_REPO`
+	if [ "$EXIST" = "" ]
+	then
+		echo "# $PACKAGE is not in Tumbleweed, add it by doing:"
+	else
+		TUMBLE_LINK=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
+		#echo $TUMBLE_LINK
+		if [ "$TUMBLE_LINK" = "" ]
+		then
+			echo "# $PACKAGE is not a linked package in Tumbleweed, to overwrite the link, do:"
+		fi
+	fi
+
+	if [ "$BASE_LINK" = "$TUMBLE_LINK" ]
+	then
+		echo "# $PACKAGE is up to date."
+	else
+		echo "osc linkpac -f -r $BASE_LINK $REPO $PACKAGE $TUMBLE_REPO"
+	fi
+}
+
+#if [ $# -ne 1 ]; then
+#	echo -e "Usage:\t $0 repo/packagename\ne.g.\t $0 Kernel:stable/kernel-source"
+#	exit 1
+#fi
+
+osc ls $TUMBLE_REPO > package_list.$TUMBLE_REPO
+
+while read line
+do
+	# remove lines that start with a # and all whitespace in the line
+	line=`echo $line | sed -e '/^#/d' | sed -e 's/^[ \t]*//;s/[ \t]*$//'`
+	if [ "$line" != "" ]
+	then
+		REPO="openSUSE:11.3"
+		PACKAGE="$line"
+		compare_version
+	fi
+done < 11.3
+
+#FULL_PACKAGE=$1
+
+# I'm sure that bash regex can do this better, but hey, this works...
+#REPO=`echo $FULL_PACKAGE | cut -f 1 -d '/'`
+#PACKAGE=`echo $FULL_PACKAGE | cut -f 2 -d '/'`
+##echo $REPO
+#echo $PACKAGE
+
+compare_version
