@@ -20,6 +20,7 @@
 
 # Main Tumbleweed repository location
 TUMBLE_REPO="openSUSE:Tumbleweed"
+#TUMBLE_REPO="openSUSE:Tumbleweed:Testing"
 
 
 # expects:
