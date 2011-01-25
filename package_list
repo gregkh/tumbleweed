@@ -30,7 +30,8 @@ Kernel:stable/kernel-source
 # kernel-xen
 
 Kernel:stable/kernel-firmware
-Kernel:stable/preload
+# preload comes from Base:System as that's the "canonical" version at the moment
+Base:System/preload
 # preload wants a new systemtap and elfutils package as well:
 Kernel:stable/systemtap
 Kernel:stable/elfutils
