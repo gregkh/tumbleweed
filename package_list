@@ -108,3 +108,39 @@ Base:System/aaa_base
 
 # update channel stuff
 openSUSE:11.3:Update/bzip2
+
+# LibreOffice
+LibreOffice:Stable/libreoffice
+LibreOffice:Stable/libreoffice-artwork
+LibreOffice:Stable/libreoffice-base
+LibreOffice:Stable/libreoffice-bootstrap
+LibreOffice:Stable/libreoffice-branding-openSUSE
+LibreOffice:Stable/libreoffice-branding-upstream
+LibreOffice:Stable/libreoffice-calc
+LibreOffice:Stable/libreoffice-components
+LibreOffice:Stable/libreoffice-extensions
+LibreOffice:Stable/libreoffice-filters
+LibreOffice:Stable/libreoffice-help-en-US
+LibreOffice:Stable/libreoffice-help-group1
+LibreOffice:Stable/libreoffice-help-group2
+LibreOffice:Stable/libreoffice-help-group3
+LibreOffice:Stable/libreoffice-help-group4
+LibreOffice:Stable/libreoffice-help-group5
+LibreOffice:Stable/libreoffice-icon-themes
+LibreOffice:Stable/libreoffice-impress
+LibreOffice:Stable/libreoffice-l10n
+LibreOffice:Stable/libreoffice-l10n-extras
+LibreOffice:Stable/libreoffice-libs-core
+LibreOffice:Stable/libreoffice-libs-extern
+LibreOffice:Stable/libreoffice-libs-gui
+LibreOffice:Stable/libreoffice-testing
+LibreOffice:Stable/libreoffice-ure
+LibreOffice:Stable/libreoffice-writer
+LibreOffice:Stable/myspell-dictionaries
+
+# stuff needed for the zypper update.  Make sure these don't end up in openSUSE:11.3:Updates, if so, we need to sync up
+openSUSE:11.3/PackageKit
+openSUSE:11.3/PackageKit-branding-openSUSE
+
+
+
