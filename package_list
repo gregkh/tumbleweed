@@ -40,9 +40,9 @@ Kernel:stable/elfutils
 # Packages linked from Factory:
 #
 openSUSE:Factory/usbutils
-openSUSE:Factory/mkvtoolnix
-openSUSE:Factory/libebml
-openSUSE:Factory/libmatroska
+#openSUSE:Factory/mkvtoolnix	# now handled by a submitreq
+#openSUSE:Factory/libebml	# now handled by a submitreq
+#openSUSE:Factory/libmatroska	# now handled by a submitreq
 openSUSE:Factory/virtualbox
 
 #
@@ -102,3 +102,9 @@ network:utilities/ethtool
 network:utilities/whois
 security:netfilter/iptables
 server:mail/fetchmail
+
+# Base:System good stuff
+Base:System/aaa_base
+
+# update channel stuff
+openSUSE:11.3:Update/bzip2
