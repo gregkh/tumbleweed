@@ -136,7 +136,7 @@ LibreOffice:Stable/libreoffice-libs-gui
 LibreOffice:Stable/libreoffice-testing
 LibreOffice:Stable/libreoffice-ure
 LibreOffice:Stable/libreoffice-writer
-LibreOffice:Stable/myspell-dictionaries
+#LibreOffice:Stable/myspell-dictionaries
 
 # stuff needed for the zypper update.  Make sure these don't end up in openSUSE:11.3:Updates, if so, we need to sync up
 openSUSE:11.3/PackageKit
