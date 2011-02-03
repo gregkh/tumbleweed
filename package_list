@@ -152,8 +152,8 @@ openSUSE:11.3/yast2-autofs
 openSUSE:11.3/yast2-backup
 openSUSE:11.3/yast2-bootloader
 openSUSE:11.3/yast2-branding-openSUSE
-openSUSE:11.3/yast2-branding-SLED
-openSUSE:11.3/yast2-branding-SLES
+#openSUSE:11.3/yast2-branding-SLED	SLES and SLED packages aren't for Tumbleweed
+#openSUSE:11.3/yast2-branding-SLES
 openSUSE:11.3/yast2-ca-management
 openSUSE:11.3/yast2-CASA
 openSUSE:11.3/yast2-casa-ats
