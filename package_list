@@ -104,6 +104,11 @@ network:utilities/whois
 security:netfilter/iptables
 server:mail/fetchmail
 
+#
+# Requested by Lars Müller <lmuelle@suse.de>
+#
+server:mail/exim
+
 # Base:System good stuff
 Base:System/aaa_base
 
