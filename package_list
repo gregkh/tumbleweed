@@ -86,9 +86,13 @@ Apache/libapr1
 Apache/GeoIP
 
 #
-# can't live without offlineimap
+# Stuff requested by Greg KH <gregkh@suse.de> for stuff he uses
+# all the time
 #
 server:mail/offlineimap
+server:mail/mutt
+utilities/tmux
+
 
 #
 # Requested by Petr Uzel <petr.uzel@suse.cz> for his packages
