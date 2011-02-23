@@ -37,16 +37,16 @@ compare_version() {
 		exit 1
 	fi
 
-	EXIST=`osc ls $TUMBLE_REPO | grep $PACKAGE`
-	if [ "$EXIST" = "" ]
+	TUMBLE_LINK=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
+	#echo $TUMBLE_LINK
+	if [ "$TUMBLE_LINK" = "" ]
 	then
-		echo "# $PACKAGE is not in Tumbleweed, add it by doing:"
-	else
-		TUMBLE_LINK=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
-		#echo $TUMBLE_LINK
-		if [ "$TUMBLE_LINK" = "" ]
+		EXIST=`osc ls $TUMBLE_REPO | grep $PACKAGE`
+		if [ "$EXIST" = "" ]
 		then
-			echo "# $PACKAGE is not a linked package in Tumbleweed, to overwrite the link, do:"
+			echo "# $PACKAGE is not in $TUMBLE_REPO, add it by doing:"
+		else
+			echo "# $PACKAGE is not a linked package in $TUMBLE_REPO, to overwrite the link, do:"
 		fi
 	fi
 
