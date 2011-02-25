@@ -90,7 +90,7 @@ Apache/GeoIP
 # all the time
 #
 server:mail/offlineimap
-server:mail/mutt
+#server:mail/mutt
 utilities/tmux
 
 
@@ -128,6 +128,7 @@ LibreOffice:Stable/libreoffice-branding-openSUSE
 LibreOffice:Stable/libreoffice-branding-upstream
 LibreOffice:Stable/libreoffice-calc
 LibreOffice:Stable/libreoffice-components
+LibreOffice:Stable/libreoffice-converter
 LibreOffice:Stable/libreoffice-extensions
 LibreOffice:Stable/libreoffice-filters
 LibreOffice:Stable/libreoffice-help-en-US
@@ -136,19 +137,33 @@ LibreOffice:Stable/libreoffice-help-group2
 LibreOffice:Stable/libreoffice-help-group3
 LibreOffice:Stable/libreoffice-help-group4
 LibreOffice:Stable/libreoffice-help-group5
-LibreOffice:Stable/libreoffice-hyphen
+LibreOffice:Unstable/libreoffice-hyphen
 LibreOffice:Stable/libreoffice-icon-themes
 LibreOffice:Stable/libreoffice-impress
 LibreOffice:Stable/libreoffice-l10n
 LibreOffice:Stable/libreoffice-l10n-extras
+LibreOffice:Stable/libreoffice-languagetool
 LibreOffice:Stable/libreoffice-libs-core
 LibreOffice:Stable/libreoffice-libs-extern
 LibreOffice:Stable/libreoffice-libs-gui
+#LibreOffice:Unstable/libreoffice-openclipart
+LibreOffice:Unstable/libreoffice-templates-de
+LibreOffice:Unstable/libreoffice-templates-en
+LibreOffice:Unstable/libreoffice-templates-labels
+LibreOffice:Unstable/libreoffice-templates-presentation-layouts
+LibreOffice:Unstable/libreoffice-templates-ru
 LibreOffice:Stable/libreoffice-testing
+LibreOffice:Unstable/libreoffice-thesaurus
 LibreOffice:Stable/libreoffice-ure
+#LibreOffice:Stable/libreoffice-voikko
 LibreOffice:Stable/libreoffice-writer
+#LibreOffice:Stable/libstlport_gcc4
+#LibreOffice:Stable/libvoikko
+#LibreOffice:Stable/malaga
+#LibreOffice:Stable/malaga-suomi
 #LibreOffice:Stable/myspell-dictionaries
-
+#LibreOffice:Stable/myspell-german-old
+#LibreOffice:Stable/openclipart
 
 # game stuff
 # games/physfs		# handled by a submitrequest from RedDwarf
