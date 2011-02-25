@@ -136,6 +136,7 @@ LibreOffice:Stable/libreoffice-help-group2
 LibreOffice:Stable/libreoffice-help-group3
 LibreOffice:Stable/libreoffice-help-group4
 LibreOffice:Stable/libreoffice-help-group5
+LibreOffice:Stable/libreoffice-hyphen
 LibreOffice:Stable/libreoffice-icon-themes
 LibreOffice:Stable/libreoffice-impress
 LibreOffice:Stable/libreoffice-l10n
@@ -148,3 +149,6 @@ LibreOffice:Stable/libreoffice-ure
 LibreOffice:Stable/libreoffice-writer
 #LibreOffice:Stable/myspell-dictionaries
 
+
+# game stuff
+# games/physfs		# handled by a submitrequest from RedDwarf
