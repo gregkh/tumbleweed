@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# A script to help manage the openSUSE:Tumbleweed project
+# (C) 2010 Greg Kroah-Hartman <gregkh@suse.de>
+# Released under the GPL v2.
+#
+# This script reads the file 'package_list' and runs 'check_package'
+# on all of the packages listed in it.
+#
+# You can specify a file that lists the packages on the command line
+# if you do not want to check the default list (which is 'package_list')
+#
+# Any questions/comments/patches are gladly welcome, just send to:
+#	Greg Kroah-Hartman <gregkh@suse.de>
+#
+
+# Default package list filename.  Override it on the command line
+# if you want something else
+
+if [ $# -ne 1 ]; then
+	echo "need a name of a file full of packages to delete"
+fi
+
+FILE="$1"
+
+echo "# reading list of packages from file '$FILE'"
+
+while read line
+do
+	# remove lines that start with a # and all whitespace in the line
+	line=`echo $line | sed -e '/^#/d' | sed -e 's/^[ \t]*//;s/[ \t]*$//'`
+	if [ "$line" != "" ]
+	then
+		echo "echo \"deleting $line\" "
+		echo "osc rdelete openSUSE:Tumbleweed:Raw $line"
+	fi
+done < $FILE
