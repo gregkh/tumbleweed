@@ -38,9 +38,6 @@ Base:System/preload
 # Packages linked from Factory:
 #
 #openSUSE:Factory/usbutils
-#openSUSE:Factory/mkvtoolnix	# now handled by a submitreq
-#openSUSE:Factory/libebml	# now handled by a submitreq
-#openSUSE:Factory/libmatroska	# now handled by a submitreq
 #openSUSE:Factory/virtualbox
 
 #
@@ -147,5 +144,10 @@ LibreOffice:Stable/libreoffice-writer
 #LibreOffice:Stable/myspell-german-old
 #LibreOffice:Stable/openclipart
 
-# game stuff
-# games/physfs		# handled by a submitrequest from RedDwarf
+#
+# Submit requests from RedDwarf
+#
+# games/physfs
+# multimedia:apps/mkvtoolnix
+# multimedia:libs/libmatroska
+# multimedia:libs/libebml
