@@ -31,7 +31,8 @@ Kernel:stable/kernel-source
 
 Kernel:stable/kernel-firmware
 # preload comes from Base:System as that's the "canonical" version at the moment
-Base:System/preload
+Kernel:stable/preload
+#Base:System/preload
 
 
 #
