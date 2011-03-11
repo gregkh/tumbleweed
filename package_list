@@ -59,91 +59,90 @@ devel:tools:scm/tig
 #
 # fuse is also nice to keep up to date
 #
-filesystems/fuse
+#filesystems/fuse
 
 #
 # Latest "stable" apache2
 #
-Apache/apache2
-Apache/libapr1
-Apache/GeoIP
+#Apache/apache2
+#Apache/libapr1
+#Apache/GeoIP
 
 #
 # Stuff requested by Greg KH <gregkh@suse.de> for stuff he uses
 # all the time
 #
 server:mail/offlineimap
-#server:mail/mutt
-utilities/tmux
+server:mail/mutt
 
 
 #
 # Requested by Petr Uzel <petr.uzel@suse.cz> for his packages
 #
-Base:System/hdparm
-Base:System/parted
-Base:System/util-linux
-Base:System/sysstat
-devel:tools:building/ccache
-network/rsync
-network:utilities/ethtool
-network:utilities/whois
-security:netfilter/iptables
-server:mail/fetchmail
+#Base:System/hdparm
+#Base:System/parted
+#Base:System/util-linux
+#Base:System/sysstat
+#devel:tools:building/ccache
+#network/rsync
+#network:utilities/ethtool
+#network:utilities/whois
+#security:netfilter/iptables
+#server:mail/fetchmail
 
 #
 # Requested by Lars Müller <lmuelle@suse.de>
 #
-server:mail/exim
+#server:mail/exim
 
 # Base:System good stuff
 #Base:System/aaa_base
 
 # LibreOffice
-LibreOffice:Stable/libreoffice
-LibreOffice:Stable/libreoffice-artwork
-LibreOffice:Stable/libreoffice-base
-LibreOffice:Stable/libreoffice-bootstrap
-LibreOffice:Stable/libreoffice-branding-openSUSE
-LibreOffice:Stable/libreoffice-branding-upstream
-LibreOffice:Stable/libreoffice-calc
-LibreOffice:Stable/libreoffice-components
-LibreOffice:Stable/libreoffice-converter
-LibreOffice:Stable/libreoffice-extensions
-LibreOffice:Stable/libreoffice-filters
-LibreOffice:Stable/libreoffice-help-en-US
-LibreOffice:Stable/libreoffice-help-group1
-LibreOffice:Stable/libreoffice-help-group2
-LibreOffice:Stable/libreoffice-help-group3
-LibreOffice:Stable/libreoffice-help-group4
-LibreOffice:Stable/libreoffice-help-group5
-LibreOffice:Unstable/libreoffice-hyphen
-LibreOffice:Stable/libreoffice-icon-themes
-LibreOffice:Stable/libreoffice-impress
-LibreOffice:Stable/libreoffice-l10n
-LibreOffice:Stable/libreoffice-l10n-extras
-LibreOffice:Stable/libreoffice-languagetool
-LibreOffice:Stable/libreoffice-libs-core
-LibreOffice:Stable/libreoffice-libs-extern
-LibreOffice:Stable/libreoffice-libs-gui
-#LibreOffice:Unstable/libreoffice-openclipart
-LibreOffice:Unstable/libreoffice-templates-de
-LibreOffice:Unstable/libreoffice-templates-en
-LibreOffice:Unstable/libreoffice-templates-labels
-LibreOffice:Unstable/libreoffice-templates-presentation-layouts
-LibreOffice:Unstable/libreoffice-templates-ru
-LibreOffice:Stable/libreoffice-testing
-LibreOffice:Unstable/libreoffice-thesaurus
-LibreOffice:Stable/libreoffice-ure
-#LibreOffice:Stable/libreoffice-voikko
-LibreOffice:Stable/libreoffice-writer
-#LibreOffice:Stable/libstlport_gcc4
-#LibreOffice:Stable/libvoikko
-#LibreOffice:Stable/malaga
-#LibreOffice:Stable/malaga-suomi
-#LibreOffice:Stable/myspell-dictionaries
-#LibreOffice:Stable/myspell-german-old
-#LibreOffice:Stable/openclipart
+#LibreOffice:Stable/libreoffice
+#LibreOffice:Stable/libreoffice-artwork
+#LibreOffice:Stable/libreoffice-base
+#LibreOffice:Stable/libreoffice-bootstrap
+#LibreOffice:Stable/libreoffice-branding-openSUSE
+#LibreOffice:Stable/libreoffice-branding-upstream
+#LibreOffice:Stable/libreoffice-calc
+#LibreOffice:Stable/libreoffice-components
+#LibreOffice:Stable/libreoffice-converter
+#LibreOffice:Stable/libreoffice-extensions
+#LibreOffice:Stable/libreoffice-filters
+#LibreOffice:Stable/libreoffice-help-en-US
+#LibreOffice:Stable/libreoffice-help-group1
+#LibreOffice:Stable/libreoffice-help-group2
+#LibreOffice:Stable/libreoffice-help-group3
+#LibreOffice:Stable/libreoffice-help-group4
+#LibreOffice:Stable/libreoffice-help-group5
+#LibreOffice:Unstable/libreoffice-hyphen
+#LibreOffice:Stable/libreoffice-icon-themes
+#LibreOffice:Stable/libreoffice-impress
+#LibreOffice:Stable/libreoffice-l10n
+#LibreOffice:Stable/libreoffice-l10n-extras
+#LibreOffice:Stable/libreoffice-languagetool
+#LibreOffice:Stable/libreoffice-libs-core
+#LibreOffice:Stable/libreoffice-libs-extern
+#LibreOffice:Stable/libreoffice-libs-gui
+##LibreOffice:Unstable/libreoffice-openclipart
+#LibreOffice:Unstable/libreoffice-templates-de
+#LibreOffice:Unstable/libreoffice-templates-en
+#LibreOffice:Unstable/libreoffice-templates-labels
+#LibreOffice:Unstable/libreoffice-templates-presentation-layouts
+#LibreOffice:Unstable/libreoffice-templates-ru
+#LibreOffice:Stable/libreoffice-testing
+#LibreOffice:Unstable/libreoffice-thesaurus
+#LibreOffice:Stable/libreoffice-ure
+##LibreOffice:Stable/libreoffice-voikko
+#LibreOffice:Stable/libreoffice-writer
+##LibreOffice:Stable/libstlport_gcc4
+##LibreOffice:Stable/libvoikko
+##LibreOffice:Stable/malaga
+##LibreOffice:Stable/malaga-suomi
+##LibreOffice:Stable/myspell-dictionaries
+##LibreOffice:Stable/myspell-german-old
+##LibreOffice:Stable/openclipart
 
 #
 # Submit requests from RedDwarf
