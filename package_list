@@ -38,8 +38,8 @@ Kernel:stable/preload
 #
 # Packages linked from Factory:
 #
-#openSUSE:Factory/usbutils
-#openSUSE:Factory/virtualbox
+openSUSE:Factory/usbutils
+openSUSE:Factory/virtualbox
 
 #
 # Latest "stable" samba packages:
