@@ -38,7 +38,7 @@ Kernel:stable/preload
 #
 # Packages linked from Factory:
 #
-openSUSE:Factory/usbutils
+Base:System/usbutils
 openSUSE:Factory/virtualbox
 
 #
