@@ -57,9 +57,10 @@ devel:tools:scm/git
 devel:tools:scm/tig
 
 #
-# fuse is also nice to keep up to date
+# filesystem fun
 #
 #filesystems/fuse
+filesystems/btrfsprogs
 
 #
 # Latest "stable" apache2
