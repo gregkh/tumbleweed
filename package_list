@@ -34,6 +34,9 @@ Kernel:stable/kernel-firmware
 Kernel:stable/preload
 #Base:System/preload
 
+# systemtap is needed for new kernel versions
+devel:tools/systemtap
+
 
 #
 # Packages linked from Factory:
@@ -75,6 +78,12 @@ filesystems/btrfsprogs
 #
 server:mail/offlineimap
 server:mail/mutt
+
+
+#
+# Publishing tools
+#
+Publishing/texmaker
 
 
 #
