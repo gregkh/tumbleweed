@@ -44,6 +44,10 @@ devel:tools/systemtap
 Base:System/usbutils
 openSUSE:Factory/virtualbox
 
+# networking tools
+security:netfilter/iproute2
+network:utilities/ethtool
+
 #
 # Latest "stable" samba packages:
 #
