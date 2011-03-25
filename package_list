@@ -63,6 +63,10 @@ network:samba:STABLE/samba
 devel:tools:scm/git
 devel:tools:scm/tig
 
+# so is mercurial
+devel:tools:scm/mercurial
+
+
 #
 # filesystem fun
 #
@@ -88,6 +92,10 @@ server:mail/mutt
 # Publishing tools
 #
 Publishing/texmaker
+
+
+# The R language stuff
+devel:languages:R:base/R
 
 
 #
