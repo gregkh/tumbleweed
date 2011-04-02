@@ -42,7 +42,6 @@ devel:tools/systemtap
 # Packages linked from Factory:
 #
 Base:System/usbutils
-openSUSE:Factory/virtualbox
 
 # networking tools
 security:netfilter/iproute2
