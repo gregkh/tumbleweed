@@ -6,6 +6,14 @@
 #
 # Lines starting with a '#' are ignored, as is whitespace.
 #
+#
+# Helpful hints:
+#  - to find out where a package is (i.e. the "root" development location):
+#	osc meta pkg openSUSE:Factory PACKAGE_NAME
+#  - to find out what packages rely on a specific package (like a library):
+#	osc whatdependson openSUSE:11.4 PACKAGE_NAME standard i586
+#
+
 
 #
 # Kernel
