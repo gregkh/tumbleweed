@@ -174,9 +174,20 @@ LibreOffice:Stable/libreoffice-writer
 #LibreOffice:Stable/openclipart
 
 #
-# Submit requests from RedDwarf
+# Multimedia stuff requested by Takashi
 #
-# games/physfs
-# multimedia:apps/mkvtoolnix
-# multimedia:libs/libmatroska
-# multimedia:libs/libebml
+multimedia:apps/awesfx
+multimedia:apps/hydrogen
+multimedia:apps/vorbis-tools
+multimedia:apps/mkvtoolnix
+multimedia:libs/alsa
+multimedia:libs/gstreamer-0_10-plugins-good
+multimedia:libs/libao
+multimedia:libs/libsndfile
+multimedia:libs/libvpx
+multimedia:libs/openal-soft
+multimedia:libs/pulseaudio
+multimedia:libs/taglib
+multimedia:libs/usbmuxd
+multimedia:libs/vcdimager
+
