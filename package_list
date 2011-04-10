@@ -191,3 +191,27 @@ multimedia:libs/taglib
 multimedia:libs/usbmuxd
 multimedia:libs/vcdimager
 
+
+#
+# Banshee 2!
+#
+Banshee/banshee-1
+Banshee/banshee-community-extensions
+Banshee/gio-sharp
+Banshee/gkeyfile-sharp
+Banshee/gtk-sharp-beans
+Banshee/gudev-sharp
+Banshee/ipod-sharp
+#Banshee/libgpod
+multimedia:libs/libgpod
+#Banshee/libimobiledevice
+multimedia:libs/libimobiledevice
+#Banshee/libplist
+multimedia:libs/libplist
+#Banshee/libwebkit
+#Banshee/mono-addins
+#Banshee/mono-zeroconf
+#Banshee/ndesk-dbus
+#Banshee/ndesk-dbus-glib
+#Banshee/podsleuth
+#Banshee/taglib-sharp
