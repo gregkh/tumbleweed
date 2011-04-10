@@ -54,6 +54,7 @@ Base:System/usbutils
 # networking tools
 security:netfilter/iproute2
 network:utilities/ethtool
+network/unison
 
 #
 # Latest "stable" samba packages:
