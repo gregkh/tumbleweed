@@ -215,3 +215,10 @@ multimedia:libs/libplist
 #Banshee/ndesk-dbus-glib
 #Banshee/podsleuth
 #Banshee/taglib-sharp
+
+#
+# osc tools
+#
+openSUSE:Tools/osc
+openSUSE:Tools/osc-source_validator
+
