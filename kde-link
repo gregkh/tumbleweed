@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+
+my $repository = "openSUSE:Tumbleweed:KDE";
+
+my %kde_sub_packages = (
+	"kdeaccessibility4-icons" => "kdeaccessibility4",
+	"kdeartwork4-noarch" => "kdeartwork4",
+	"kdebase4-wallpapers" => "kdebase4-workspace",
+	"kdeedu4-noarch" => "kdeedu4",
+	"kdegames4-carddecks" => "kdegames4",
+	"kdelibs4-apidocs" => "kdelibs4",
+	"mono-kde4" => "kdebindings4",
+	"perl-kde4" => "kdebindings4",
+	"python-kde4" => "kdebindings4",
+	"python-kdebase4" => "kdebase4-workspace",
+	"ruby-kde4" => "kdebindings4",
+	"smoke-generator" => "kdebindings4",
+);
+
+foreach $sub_package (sort keys %kde_sub_packages){
+	#system("osc rdelete $repository $sub_package");
+	printf("osc linkpac -C copy $repository $kde_sub_packages{$sub_package} $repository $sub_package\n");
+	#system("osc linkpac -C copy $repository $kde_sub_packages{$sub_package} $repository $sub_package");
+}
