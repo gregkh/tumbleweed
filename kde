@@ -21,5 +21,21 @@ KDE:Release:46/oxygen-icon-theme
 KDE:Release:46/plasma-addons
 KDE:Release:46/kdepimlibs4
 
-# add-ins
-KDE:Release:46/libqt4
+# qt stuff
+KDE:Qt/libdbusmenu-qt
+KDE:Qt/libqca2
+KDE:Qt/libqjson
+KDE:Qt/libqt4
+KDE:Qt/libqt4-devel-doc
+KDE:Qt/libqt4-devel-doc-data
+KDE:Qt/libqt4-sql-plugins
+KDE:Qt/python-qscintilla
+KDE:Qt/python-qt4
+KDE:Qt/python-sip
+KDE:Qt/qconf
+KDE:Qt/qscintilla
+KDE:Qt/qt-at-spi
+KDE:Qt/qt-creator
+KDE:Qt/qt-gstreamer
+KDE:Qt/qt4-assistant-adp
+KDE:Qt/qt4-qtscript
