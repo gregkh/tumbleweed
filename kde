@@ -20,3 +20,6 @@ KDE:Release:46/kdewebdev4
 KDE:Release:46/oxygen-icon-theme
 KDE:Release:46/plasma-addons
 KDE:Release:46/kdepimlibs4
+
+# add-ins
+KDE:Release:46/libqt4
