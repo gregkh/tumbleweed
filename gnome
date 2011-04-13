@@ -128,6 +128,7 @@ GNOME:STABLE:3.0/NetworkManager-pptp
 GNOME:STABLE:3.0/NetworkManager-vpnc
 GNOME:STABLE:3.0/notification-daemon
 GNOME:STABLE:3.0/orca
+GNOME:STABLE:3.0/PackageKit
 GNOME:STABLE:3.0/pango
 GNOME:STABLE:3.0/pangomm
 GNOME:STABLE:3.0/polkit
