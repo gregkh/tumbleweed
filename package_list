@@ -75,6 +75,9 @@ devel:tools:scm/tig
 devel:tools:scm/mercurial
 
 
+# who doesn't like dwarves?
+devel:tools/dwarves
+
 #
 # filesystem fun
 #
