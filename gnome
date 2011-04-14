@@ -37,10 +37,12 @@ GNOME:STABLE:3.0/gdl
 GNOME:STABLE:3.0/gdm
 GNOME:STABLE:3.0/gedit
 GNOME:STABLE:3.0/gedit-plugins
+GNOME:STABLE:3.0/geoclue
 GNOME:STABLE:3.0/gir-repository
 GNOME:STABLE:3.0/gjs
 GNOME:STABLE:3.0/glib-networking
 GNOME:STABLE:3.0/glib2
+GNOME:STABLE:3.0/glib2-branding-openSUSE
 GNOME:STABLE:3.0/glibmm2
 GNOME:STABLE:3.0/gnome-backgrounds
 GNOME:STABLE:3.0/gnome-bluetooth
@@ -114,6 +116,7 @@ GNOME:STABLE:3.0/libwnck
 GNOME:STABLE:3.0/libwnck2
 GNOME:STABLE:3.0/libxklavier
 GNOME:STABLE:3.0/liferea
+GNOME:STABLE:3.0/Mesa
 GNOME:STABLE:3.0/metacity
 GNOME:STABLE:3.0/mousetweaks
 GNOME:STABLE:3.0/mutter
@@ -128,8 +131,10 @@ GNOME:STABLE:3.0/NetworkManager-pptp
 GNOME:STABLE:3.0/NetworkManager-vpnc
 GNOME:STABLE:3.0/notification-daemon
 GNOME:STABLE:3.0/orca
+GNOME:STABLE:3.0/PackageKit
 GNOME:STABLE:3.0/pango
 GNOME:STABLE:3.0/pangomm
+GNOME:STABLE:3.0/pidgin
 GNOME:STABLE:3.0/polkit
 GNOME:STABLE:3.0/polkit-gnome
 GNOME:STABLE:3.0/poppler
@@ -153,6 +158,7 @@ GNOME:STABLE:3.0/tomboy
 GNOME:STABLE:3.0/totem
 GNOME:STABLE:3.0/totem-pl-parser
 GNOME:STABLE:3.0/tracker
+GNOME:STABLE:3.0/tsclient
 GNOME:STABLE:3.0/upower
 GNOME:STABLE:3.0/vala
 GNOME:STABLE:3.0/vinagre
