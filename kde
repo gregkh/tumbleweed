@@ -4,22 +4,52 @@ KDE:Release:46/kdeaccessibility4
 KDE:Release:46/kdeadmin4
 KDE:Release:46/kdeartwork4
 KDE:Release:46/kdebase4
+KDE:Release:46/kdebase4-openSUSE
 KDE:Release:46/kdebase4-runtime
+KDE:Release:46/kdebase4-session
 KDE:Release:46/kdebase4-workspace
 KDE:Release:46/kdebindings4
+KDE:Release:46/kdedesktopcheck
 KDE:Release:46/kdeedu4
 KDE:Release:46/kdegames4
 KDE:Release:46/kdegraphics4
 KDE:Release:46/kdelibs4
 KDE:Release:46/kdemultimedia4
 KDE:Release:46/kdenetwork4
+KDE:Release:46/kdepim4
+KDE:Release:46/kdepim4-runtime
+KDE:Release:46/kdepimlibs4
 KDE:Release:46/kdesdk4
+KDE:Release:46/kde-susetranslations
+KDE:Release:46/kdesvn
 KDE:Release:46/kdetoys4
 KDE:Release:46/kdeutils4
+KDE:Release:46/kdevelop4
+KDE:Release:46/kdevelop4-pg-qt
+KDE:Release:46/kdevelop4-plugins
+KDE:Release:46/kdevplatform
 KDE:Release:46/kdewebdev4
 KDE:Release:46/oxygen-icon-theme
 KDE:Release:46/plasma-addons
-KDE:Release:46/kdepimlibs4
+KDE:Release:46/koffice2
+KDE:Release:46/koffice2-doc
+KDE:Release:46/koffice2-l10n
+KDE:Release:46/konqueror-plugins
+
+# the following are links, don't accidentally recreate them:
+#	"kdeaccessibility4-icons" => "kdeaccessibility4",
+#	"kdeartwork4-noarch" => "kdeartwork4",
+#	"kdebase4-wallpapers" => "kdebase4-workspace",
+#	"kdeedu4-noarch" => "kdeedu4",
+#	"kdegames4-carddecks" => "kdegames4",
+#	"kdelibs4-apidocs" => "kdelibs4",
+#	"mono-kde4" => "kdebindings4",
+#	"perl-kde4" => "kdebindings4",
+#	"python-kde4" => "kdebindings4",
+#	"python-kdebase4" => "kdebase4-workspace",
+#	"ruby-kde4" => "kdebindings4",
+#	"smoke-generator" => "kdebindings4",
+
 
 # qt stuff
 KDE:Qt/libdbusmenu-qt
@@ -39,3 +69,133 @@ KDE:Qt/qt-creator
 KDE:Qt/qt-gstreamer
 KDE:Qt/qt4-assistant-adp
 KDE:Qt/qt4-qtscript
+
+# remaining packages, do we add them?
+#akonadi-runtime
+#amarok
+#antlr
+#aqbanking
+#arora
+#attica
+#automoc4
+#avogadro
+#bluedevil
+#cagibi
+#choqok
+#cln
+#clucene-core
+#create-resources
+#dbus-1
+#dbus-1-glib
+#dbus-1-x11
+#decibel
+#digikam
+#ebook-tools
+#eric
+#exiv2
+#getdata
+#ggz
+#ggz-client-libs
+#google-gadgets
+#gpg2
+#gpgme
+#grantlee
+#gstreamer-0_10
+#gstreamer-0_10-doc
+#gstreamer-0_10-plugins-base
+#gwenhywfar
+#iodbc
+#k3b
+#kaffeine
+#kcall
+#kchmviewer
+#kcm_gtk
+#kdiff3
+#kepas
+#kile
+#kio_sysinfo-branding-upstream
+#kiosktool
+#kipi-plugins
+#kmymoney
+#konversation
+#kpackagekit
+#kradio
+#krename
+#krusader
+#ksmolt
+#ksshaskpass
+#kst
+#ktorrent
+#kupdateapplet
+#kvirc
+#kvkbd
+#kvpnc
+#kwebkitpart
+#lapack
+#lensfun
+#libarchive
+#libassuan
+#libbluedevil
+#libeigen2-devel
+#libfli
+#libgmm++-devel
+#libindi
+#libktorrent
+#liblastfm
+#liblqr
+#libmal
+#libmsn
+#libnova
+#libqimageblitz4
+#libqt4
+#librcps
+#libssh
+#moodbar
+#nepomuk-virtuoso-converter
+#nepomukcontroller
+#NetworkManager-kde4
+#ocaml-facile
+#openbabel
+#opencv
+#openjpeg
+#oxygen-gtk
+#oxygen-icon-theme
+#oxygen-molecule
+#PackageKit
+#phonon
+#phonon-backend-gstreamer-0_10
+#phonon-backend-xine
+#plasma-addons
+#plasmoid-cwp
+#plasmoid-quickaccess
+#podofo
+#polkit-kde-1
+#polkit-kde-agent-1
+#polkit-kde-kcmmodules-1
+#polkit-qt
+#polkit-qt-1
+#pth
+#python-gstreamer-0_10
+#qalculate
+#qhull
+#qoauth
+#qtcurve-kde4
+#rasqal
+#rekonq
+#rsibreak
+#scribus
+#shared-desktop-ontologies
+#skanlite
+#smb4k
+#soprano
+#soprano-backend-sesame
+#soprano-backend-virtuoso
+#speedcrunch
+#strigi
+#synaptiks
+#taglib
+#taglib-extras
+#tellico
+#virtuoso
+#yakuake
+#yast2-control-center
