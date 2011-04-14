@@ -55,6 +55,7 @@ Base:System/usbutils
 security:netfilter/iproute2
 network:utilities/ethtool
 network/unison
+network:vpn/openvpn
 
 #
 # Latest "stable" samba packages:
