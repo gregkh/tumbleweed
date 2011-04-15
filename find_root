@@ -1,0 +1,5 @@
+#!/bin/bash
+
+PACKAGE_NAME=$1
+
+osc meta pkg openSUSE:Factory $PACKAGE_NAME | grep "devel project" | cut -f 2 -d '=' | cut -f 1 -d ' '
