@@ -23,6 +23,7 @@ TUMBLE_REPO="openSUSE:Tumbleweed"
 #TUMBLE_REPO="openSUSE:Tumbleweed:Testing"
 #TUMBLE_REPO="openSUSE:Tumbleweed:GNOME"
 #TUMBLE_REPO="openSUSE:Tumbleweed:KDE"
+#TUMBLE_REPO="openSUSE:Tumbleweed:lxde"
 
 
 # expects:
