@@ -1,3 +1,4 @@
+#GNOME:STABLE:3.0/_pattern
 GNOME:STABLE:3.0/accerciser
 GNOME:STABLE:3.0/accountsservice
 GNOME:STABLE:3.0/anjuta
@@ -8,6 +9,8 @@ GNOME:STABLE:3.0/atkmm
 GNOME:STABLE:3.0/avahi
 GNOME:STABLE:3.0/avahi-glib2
 GNOME:STABLE:3.0/brasero
+GNOME:STABLE:3.0/bundle-lang-common
+GNOME:STABLE:3.0/bundle-lang-gnome
 GNOME:STABLE:3.0/cantarell-fonts
 GNOME:STABLE:3.0/caribou
 GNOME:STABLE:3.0/cheese
@@ -32,6 +35,7 @@ GNOME:STABLE:3.0/folks
 GNOME:STABLE:3.0/gcalctool
 GNOME:STABLE:3.0/gconf-editor
 GNOME:STABLE:3.0/gconf2
+GNOME:STABLE:3.0/gconf2-branding-openSUSE
 GNOME:STABLE:3.0/gdk-pixbuf
 GNOME:STABLE:3.0/gdl
 GNOME:STABLE:3.0/gdm
