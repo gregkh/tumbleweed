@@ -227,3 +227,26 @@ multimedia:libs/libplist
 openSUSE:Tools/osc
 openSUSE:Tools/osc-source_validator
 
+#
+# lxde
+#
+X11:lxde/lxappearance
+X11:lxde/lxcc
+X11:lxde/lxde-common
+X11:lxde/lxde-common-branding-openSUSE
+X11:lxde/lxdm
+X11:lxde/lxdm-conf
+X11:lxde/lxinput
+X11:lxde/lxlauncher
+X11:lxde/lxmenu-data
+X11:lxde/lxmusic
+X11:lxde/lxpanel
+X11:lxde/lxpolkit
+X11:lxde/lxrandr
+X11:lxde/lxsession
+X11:lxde/lxsession-edit
+X11:lxde/lxshortcut
+X11:lxde/lxtask
+X11:lxde/lxterminal
+#X11:lxde/openbox
+X11:lxde/pcmanfm
