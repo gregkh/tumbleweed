@@ -20,10 +20,11 @@
 
 # Main Tumbleweed repository location
 TUMBLE_REPO="openSUSE:Tumbleweed"
-#TUMBLE_REPO="openSUSE:Tumbleweed:Testing"
-#TUMBLE_REPO="openSUSE:Tumbleweed:GNOME"
-#TUMBLE_REPO="openSUSE:Tumbleweed:KDE"
 
+# some other repos we like to use for stuff
+TESTING_REPO="openSUSE:Tumbleweed:Testing"
+GNOME_REPO="openSUSE:Tumbleweed:GNOME"
+KDE_REPO="openSUSE:Tumbleweed:KDE"
 
 # expects:
 #	$PACKAGE to be set to the package name to be checked
@@ -60,13 +61,34 @@ compare_version() {
 	fi
 }
 
-if [ $# -ne 1 ]; then
+
+#FULL_PACKAGE=$1
+
+if [ $# -lt 1 ]; then
 	echo -e "Usage:\t $0 repo/packagename\ne.g.\t $0 Kernel:stable/kernel-source"
 	exit 1
 fi
 
+while [ "$1" != "" ]; do
+	case $1 in
+		--repo )	shift
+				TUMBLE_REPO=$1
+				;;
+		--kde )		TUMBLE_REPO=$KDE_REPO
+				;;
+		--gnome )	TUMBLE_REPO=$GNOME_REPO
+				;;
+		--testing )	TUMBLE_REPO=$TESTING_REPO
+				;;
+		* )		FULL_PACKAGE=$1
+				;;
+	esac
+	shift
+done
 
-FULL_PACKAGE=$1
+#echo "# TUMBLE_REPO =  '$TUMBLE_REPO'"
+#echo "# FULL_PACKAGE = '$FULL_PACKAGE'"
+
 
 # I'm sure that bash regex can do this better, but hey, this works...
 REPO=`echo $FULL_PACKAGE | cut -f 1 -d '/'`
