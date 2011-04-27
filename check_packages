@@ -16,14 +16,34 @@
 
 # Default package list filename.  Override it on the command line
 # if you want something else
-
 FILE="package_list"
 
-if [ $# -eq 1 ]; then
-	FILE="$1"
-fi
+# Use the default repo list.  There are 3 options for different built-in repos:
+# --kde :	openSUSE:Tumbleweed:KDE
+# --gnome :	openSUSE:Tumbleweed:GNOME
+# --testing :	openSUSE:Tumbleweed:Testing
+REPO="openSUSE:Tumbleweed"
 
-echo "# reading list of packages from file '$FILE'"
+while [ "$1" != "" ]; do
+	case $1 in
+		--kde )		REPO="openSUSE:Tumbleweed:KDE"
+				;;
+		--gnome )	REPO="openSUSE:Tumbleweed:GNOME"
+				;;
+		--testing )	REPO="openSUSE:Tumbleweed:Testing"
+				;;
+		* )		FILE=$1
+				;;
+	esac
+	shift
+done
+
+#
+#if [ $# -eq 1 ]; then
+#	FILE="$1"
+#fi
+
+echo "# reading list of packages from file '$FILE' for repo '$REPO'"
 
 while read line
 do
@@ -31,6 +51,6 @@ do
 	line=`echo $line | sed -e '/^#/d' | sed -e 's/^[ \t]*//;s/[ \t]*$//'`
 	if [ "$line" != "" ]
 	then
-		./check_package $line
+		./check_package --repo $REPO $line
 	fi
 done < $FILE
