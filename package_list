@@ -52,6 +52,7 @@ devel:tools/systemtap
 Base:System/usbutils
 Base:System/attr
 Base:System/acl
+Base:System/mc
 
 # networking tools
 security:netfilter/iproute2
@@ -103,6 +104,8 @@ filesystems/btrfsprogs
 server:mail/offlineimap
 server:mail/mutt
 
+# other mail stuff:
+server:mail/tnef
 
 #
 # Publishing tools
