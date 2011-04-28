@@ -18,9 +18,10 @@
 # if you want something else
 FILE="package_list"
 
-# Use the default repo list.  There are 3 options for different built-in repos:
+# Use the default repo list.  There are 4 options for different built-in repos:
 # --kde :	openSUSE:Tumbleweed:KDE
 # --gnome :	openSUSE:Tumbleweed:GNOME
+# --xfce:	openSUSE:Tumbleweed:xfce
 # --testing :	openSUSE:Tumbleweed:Testing
 REPO="openSUSE:Tumbleweed"
 
@@ -29,6 +30,8 @@ while [ "$1" != "" ]; do
 		--kde )		REPO="openSUSE:Tumbleweed:KDE"
 				;;
 		--gnome )	REPO="openSUSE:Tumbleweed:GNOME"
+				;;
+		--xfce )	REPO="openSUSE:Tumbleweed:xfce"
 				;;
 		--testing )	REPO="openSUSE:Tumbleweed:Testing"
 				;;

@@ -25,6 +25,7 @@ TUMBLE_REPO="openSUSE:Tumbleweed"
 TESTING_REPO="openSUSE:Tumbleweed:Testing"
 GNOME_REPO="openSUSE:Tumbleweed:GNOME"
 KDE_REPO="openSUSE:Tumbleweed:KDE"
+XFCE_REPO="openSUSE:Tumbleweed:xfce"
 
 # expects:
 #	$PACKAGE to be set to the package name to be checked
@@ -77,6 +78,8 @@ while [ "$1" != "" ]; do
 		--kde )		TUMBLE_REPO=$KDE_REPO
 				;;
 		--gnome )	TUMBLE_REPO=$GNOME_REPO
+				;;
+		--xfce )	TUMBLE_REPO=$XFCE_REPO
 				;;
 		--testing )	TUMBLE_REPO=$TESTING_REPO
 				;;
