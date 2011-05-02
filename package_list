@@ -53,6 +53,7 @@ Base:System/usbutils
 Base:System/attr
 Base:System/acl
 Base:System/mc
+Base:System/sparse
 
 # networking tools
 security:netfilter/iproute2
