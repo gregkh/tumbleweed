@@ -76,6 +76,7 @@ GNOME:STABLE:3.0/gnome-screensaver
 GNOME:STABLE:3.0/gnome-session
 GNOME:STABLE:3.0/gnome-settings-daemon
 GNOME:STABLE:3.0/gnome-shell
+GNOME:STABLE:3.0/gnome-shell-extensions
 GNOME:STABLE:3.0/gnome-system-monitor
 GNOME:STABLE:3.0/gnome-terminal
 GNOME:STABLE:3.0/gnome-themes

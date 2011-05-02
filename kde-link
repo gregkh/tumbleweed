@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 
-my $repository = "openSUSE:Tumbleweed:KDE";
+#my $repository = "openSUSE:Tumbleweed:KDE";
+my $repository = "openSUSE:Tumbleweed";
 
 my %kde_sub_packages = (
 	"kdeaccessibility4-icons" => "kdeaccessibility4",
