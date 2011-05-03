@@ -70,8 +70,14 @@ KDE:Qt/qt-gstreamer
 KDE:Qt/qt4-assistant-adp
 KDE:Qt/qt4-qtscript
 
+# apps that people want upgraded:
+KDE:Release:46/akonadi-runtime
+KDE:Release:46/choqok
+KDE:Release:46/digikam
+KDE:Release:46/ebook-tools
+KDE:Release:46/kaffeine
+
 # remaining packages, do we add them?
-#akonadi-runtime
 #amarok
 #antlr
 #aqbanking
@@ -81,12 +87,9 @@ KDE:Qt/qt4-qtscript
 #avogadro
 #bluedevil
 #cagibi
-#choqok
 #cln
 #clucene-core
 #create-resources
-KDE:Release:46/digikam
-KDE:Release:46/ebook-tools
 #eric
 #exiv2
 #ggz
@@ -95,7 +98,6 @@ KDE:Release:46/ebook-tools
 #gwenhywfar
 #iodbc
 #k3b
-#kaffeine
 #kchmviewer
 #kcm_gtk
 #kdiff3
