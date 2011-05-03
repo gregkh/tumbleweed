@@ -54,6 +54,10 @@ Base:System/attr
 Base:System/acl
 Base:System/mc
 Base:System/sparse
+Base:System/gpg2
+Base:System/gpgme
+Base:System/elfutils
+Base:System/bootsplash-branding-openSUSE
 
 # networking tools
 security:netfilter/iproute2
@@ -107,6 +111,7 @@ server:mail/mutt
 
 # other mail stuff:
 server:mail/tnef
+server:mail/courier-imap
 
 #
 # Publishing tools
