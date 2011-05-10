@@ -125,6 +125,9 @@ Publishing/texmaker
 # The R language stuff
 devel:languages:R:base/R
 
+# graphic stuff
+graphics/hugin
+graphics/libpano
 
 #
 # Requested by Petr Uzel <petr.uzel@suse.cz> for his packages
