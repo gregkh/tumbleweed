@@ -115,6 +115,8 @@ server:mail/mutt
 # other mail stuff:
 server:mail/tnef
 server:mail/courier-imap
+server:mail/dovecot20
+server:mail/dovecot12
 
 #
 # Publishing tools
