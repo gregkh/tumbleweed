@@ -12,6 +12,8 @@
 #	osc meta pkg openSUSE:Factory PACKAGE_NAME
 #  - to find out what packages rely on a specific package (like a library):
 #	osc whatdependson openSUSE:11.4 PACKAGE_NAME standard i586
+#  - to delete a package from a repo:
+#	osc rdelete openSUSE:Tumbleweed:Testing PACKAGE_NAME
 #
 
 
@@ -58,6 +60,7 @@ Base:System/gpg2
 Base:System/gpgme
 Base:System/elfutils
 Base:System/bootsplash-branding-openSUSE
+Base:System/procps
 
 # networking tools
 security:netfilter/iproute2
@@ -112,6 +115,8 @@ server:mail/mutt
 # other mail stuff:
 server:mail/tnef
 server:mail/courier-imap
+server:mail/dovecot20
+server:mail/dovecot12
 
 #
 # Publishing tools

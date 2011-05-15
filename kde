@@ -77,23 +77,26 @@ KDE:Release:46/digikam
 KDE:Release:46/ebook-tools
 KDE:Release:46/kaffeine
 
+KDE:Release:46/bluedevil
+KDE:Release:46/kipi-plugins
+KDE:Release:46/aqbanking
+KDE:Release:46/exiv2
+
 # remaining packages, do we add them?
 #amarok
 #antlr
-#aqbanking
 #arora
 #attica
 #automoc4
 #avogadro
-#bluedevil
 #cagibi
 #cln
 #clucene-core
 #create-resources
 #eric
-#exiv2
 #ggz
 #ggz-client-libs
+
 #grantlee
 #gwenhywfar
 #iodbc
@@ -105,7 +108,6 @@ KDE:Release:46/kaffeine
 #kile
 #kio_sysinfo-branding-upstream
 #kiosktool
-#kipi-plugins
 #kmymoney
 #konversation
 #kradio

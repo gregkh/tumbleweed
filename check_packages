@@ -1,7 +1,7 @@
 #!/bin/bash
-
+#
 # A script to help manage the openSUSE:Tumbleweed project
-# (C) 2010 Greg Kroah-Hartman <gregkh@suse.de>
+# (C) 2010-2011 Greg Kroah-Hartman <gregkh@suse.de>
 # Released under the GPL v2.
 #
 # This script reads the file 'package_list' and runs 'check_package'
@@ -13,16 +13,18 @@
 # Any questions/comments/patches are gladly welcome, just send to:
 #	Greg Kroah-Hartman <gregkh@suse.de>
 #
+# Options for specifying repos to check against:
+# --kde :	openSUSE:Tumbleweed:KDE
+# --gnome :	openSUSE:Tumbleweed:GNOME
+# --xfce:	openSUSE:Tumbleweed:xfce
+# --testing :	openSUSE:Tumbleweed:Testing
+# --repo :	You pick the repo to use
 
 # Default package list filename.  Override it on the command line
 # if you want something else
 FILE="package_list"
 
-# Use the default repo list.  There are 4 options for different built-in repos:
-# --kde :	openSUSE:Tumbleweed:KDE
-# --gnome :	openSUSE:Tumbleweed:GNOME
-# --xfce:	openSUSE:Tumbleweed:xfce
-# --testing :	openSUSE:Tumbleweed:Testing
+# Default repo to use if none is specified
 REPO="openSUSE:Tumbleweed"
 
 while [ "$1" != "" ]; do
@@ -35,16 +37,14 @@ while [ "$1" != "" ]; do
 				;;
 		--testing )	REPO="openSUSE:Tumbleweed:Testing"
 				;;
+		--repo )	shift
+				REPO=$1
+				;;
 		* )		FILE=$1
 				;;
 	esac
 	shift
 done
-
-#
-#if [ $# -eq 1 ]; then
-#	FILE="$1"
-#fi
 
 echo "# reading list of packages from file '$FILE' for repo '$REPO'"
 
