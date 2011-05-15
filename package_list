@@ -127,6 +127,16 @@ graphics/hugin
 graphics/libpano
 
 #
+# Editors, we can't live without them
+#
+editors/vim
+editors/vim-plugins
+editors/nano
+editors/emacs
+editors/treeline
+
+
+#
 # Requested by Petr Uzel <petr.uzel@suse.cz> for his packages
 #
 #Base:System/hdparm
