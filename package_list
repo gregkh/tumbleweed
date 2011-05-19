@@ -167,14 +167,21 @@ editors/treeline
 # see the libreoffice file
 
 #
-# Multimedia stuff requested by Takashi
+# Multimedia stuff requested by Takashi and others
 #
 multimedia:apps/awesfx
 multimedia:apps/hydrogen
 multimedia:apps/vorbis-tools
 multimedia:apps/mkvtoolnix
 multimedia:libs/alsa
+multimedia:libs/gstreamer-0_10
+multimedia:libs/gstreamer-0_10-doc
+multimedia:libs/gstreamer-0_10-plugins-bad
+multimedia:libs/gstreamer-0_10-plugins-base
+multimedia:libs/gstreamer-0_10-plugins-farsight
+multimedia:libs/gstreamer-0_10-plugins-gl
 multimedia:libs/gstreamer-0_10-plugins-good
+multimedia:libs/gstreamer-0_10-plugins-ugly
 multimedia:libs/libao
 multimedia:libs/libsndfile
 multimedia:libs/libvpx
