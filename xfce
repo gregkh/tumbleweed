@@ -15,7 +15,7 @@ X11:xfce/libxfce4ui
 X11:xfce/libxfce4util
 X11:xfce/libxfcegui4
 X11:xfce/midori
-X11:xfce/mousepad
+#X11:xfce/mousepad
 X11:xfce/orage
 X11:xfce/parole
 X11:xfce/pyxfce
@@ -69,7 +69,6 @@ X11:xfce/xfce4-panel-plugin-timer
 X11:xfce/xfce4-panel-plugin-verve
 X11:xfce/xfce4-panel-plugin-wavelan
 X11:xfce/xfce4-panel-plugin-weather
-X11:xfce/xfce4-panel-plugin-xfapplet
 X11:xfce/xfce4-panel-plugin-xkb
 X11:xfce/xfce4-panel-plugin-xmms
 X11:xfce/xfce4-power-manager
@@ -83,7 +82,7 @@ X11:xfce/xfce4-volumed
 X11:xfce/xfconf
 X11:xfce/xfdesktop
 X11:xfce/xfmpc
-X11:xfce/xfprint
+#X11:xfce/xfprint
 X11:xfce/xfvnc
 X11:xfce/xfwm4
 X11:xfce/xfwm4-themes
