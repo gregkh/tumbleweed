@@ -37,7 +37,7 @@ compare_version() {
 
 	if [ "$BASE_LINK" = "" ]
 	then
-		echo "There is no such package as $REPO/$PACKAGE."
+		echo "# There is no such package as $REPO/$PACKAGE."
 		exit 1
 	fi
 
