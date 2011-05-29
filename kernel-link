@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+
+#my $repository = "openSUSE:Tumbleweed:KDE";
+my $repository = "openSUSE:Tumbleweed:Testing";
+#my $repository = "openSUSE:Tumbleweed";
+
+my @kernel_sub_packages = (
+	"kernel-debug",
+	"kernel-default",
+	"kernel-desktop",
+	"kernel-docs",
+	"kernel-ec2",
+	"kernel-pae",
+	"kernel-syms",
+	"kernel-trace",
+	"kernel-vanilla",
+	"kernel-vmi",
+	"kernel-xen",
+);
+
+foreach my $sub_package (@kernel_sub_packages){
+	#system("osc rdelete $repository $sub_package");
+	printf("osc linkpac -C copy $repository kernel-source $repository $sub_package\n");
+	#system("osc linkpac -C copy $repository $kde_sub_packages{$sub_package} $repository $sub_package");
+}
