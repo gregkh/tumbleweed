@@ -1,7 +1,8 @@
 #!/usr/bin/perl
 
 #my $repository = "openSUSE:Tumbleweed:KDE";
-my $repository = "openSUSE:Tumbleweed";
+my $repository = "openSUSE:Tumbleweed:Testing";
+#my $repository = "openSUSE:Tumbleweed";
 
 my %kde_sub_packages = (
 	"kdeaccessibility4-icons" => "kdeaccessibility4",
@@ -16,6 +17,8 @@ my %kde_sub_packages = (
 	"python-kdebase4" => "kdebase4-workspace",
 	"ruby-kde4" => "kdebindings4",
 	"smoke-generator" => "kdebindings4",
+	"libqt4-sql-plugins" => "libqt4",
+	"libqt4-doc-devel" => "libqt4"
 );
 
 foreach $sub_package (sort keys %kde_sub_packages){
