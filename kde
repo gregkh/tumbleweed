@@ -59,7 +59,7 @@ KDE:Qt/libdbusmenu-qt
 KDE:Qt/libqca2
 KDE:Qt/libqjson
 KDE:Qt/libqt4
-KDE:Qt/libqt4-devel-doc
+#KDE:Qt/libqt4-devel-doc
 #KDE:Qt/libqt4-sql-plugins
 KDE:Qt/python-qscintilla
 KDE:Qt/python-qt4
