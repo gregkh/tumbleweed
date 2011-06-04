@@ -2,4 +2,8 @@
 
 PACKAGE_NAME=$1
 
-osc meta pkg openSUSE:Factory $PACKAGE_NAME | grep "devel project" | cut -f 2 -d '=' | cut -f 1 -d ' '
+osc develproject openSUSE:Factory $PACKAGE_NAME 2>/dev/null
+if [ $? -ne 0 ]; then
+	# older osc doesn't support develproject
+	osc meta pkg openSUSE:Factory $PACKAGE_NAME | grep "devel project" | cut -f 2 -d '=' | cut -f 1 -d ' '
+fi
