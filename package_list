@@ -209,7 +209,6 @@ Banshee/gio-sharp
 Banshee/gkeyfile-sharp
 Banshee/gtk-sharp-beans
 Banshee/gudev-sharp
-Banshee/ipod-sharp
 #Banshee/libgpod
 multimedia:libs/libgpod
 #Banshee/libimobiledevice
