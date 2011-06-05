@@ -180,7 +180,6 @@ multimedia:libs/gstreamer-0_10
 multimedia:libs/gstreamer-0_10-doc
 multimedia:libs/gstreamer-0_10-plugins-bad
 multimedia:libs/gstreamer-0_10-plugins-base
-multimedia:libs/gstreamer-0_10-plugins-farsight
 multimedia:libs/gstreamer-0_10-plugins-gl
 multimedia:libs/gstreamer-0_10-plugins-good
 multimedia:libs/gstreamer-0_10-plugins-ugly
