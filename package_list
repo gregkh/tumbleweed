@@ -66,6 +66,7 @@ Base:System/procps
 
 # networking tools
 security:netfilter/iproute2
+security:netfilter/iptables
 network:utilities/ethtool
 network/unison
 network:vpn/openvpn
