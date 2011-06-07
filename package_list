@@ -64,6 +64,8 @@ Base:System/elfutils
 Base:System/bootsplash-branding-openSUSE
 Base:System/procps
 
+devel:openSUSE:Factory/grub2
+
 # networking tools
 security:netfilter/iproute2
 security:netfilter/iptables
