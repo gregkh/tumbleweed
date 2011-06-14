@@ -273,7 +273,7 @@ X11:lxde/pcmanfm
 #
 # Documentation tools
 #
-Documentation:Tools/calibre
+#Documentation:Tools/calibre	# needs newer python which we don't have yet
 
 #
 # Everyone likes games
