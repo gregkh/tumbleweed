@@ -87,6 +87,8 @@ network:utilities/ethtool
 network/unison
 network:vpn/openvpn
 network/ypbind
+openSUSE:Factory/liboauth
+
 
 #
 # Latest "stable" samba packages:
