@@ -76,6 +76,12 @@ Base:System/polkit-default-privs
 Base:System/systemd
 Base:System/udev
 
+# services that need updating due to aaa_base being newer:
+security:chipcard/pcsc-lite
+Base:System/nfs-utils
+network/smpppd
+
+
 # needed for polkit-default-privs to be in rpmlint, so that rpmlint doesn't
 # fail during build of systemd.
 devel:openSUSE:Factory:rpmlint/rpmlint
