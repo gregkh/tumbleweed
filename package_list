@@ -64,6 +64,8 @@ Base:System/elfutils
 Base:System/bootsplash-branding-openSUSE
 Base:System/procps
 Base:System/microcode_ctl
+Base:System/upower
+Base:System/screen
 
 devel:openSUSE:Factory/grub2
 
