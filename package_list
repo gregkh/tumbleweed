@@ -49,6 +49,8 @@ Kernel:stable/preload
 # systemtap is needed for new kernel versions
 devel:tools/systemtap
 
+# new valgrind needed for 3.0 kernel versions
+devel:tools/valgrind
 
 #
 # Packages linked from Base:System:
