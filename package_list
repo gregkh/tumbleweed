@@ -68,6 +68,7 @@ Base:System/procps
 Base:System/microcode_ctl
 Base:System/upower
 Base:System/screen
+Base:System/laptop-mode-tools
 
 devel:openSUSE:Factory/grub2
 
