@@ -186,7 +186,6 @@ editors/treeline
 #network/rsync
 #network:utilities/ethtool
 #network:utilities/whois
-#security:netfilter/iptables
 #server:mail/fetchmail
 
 #
