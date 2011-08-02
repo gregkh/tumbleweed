@@ -52,6 +52,8 @@ devel:tools/systemtap
 # new valgrind needed for 3.0 kernel versions
 devel:tools/valgrind
 
+devel:tools/perf
+
 #
 # Packages linked from Base:System:
 #
@@ -62,6 +64,7 @@ Base:System/mc
 Base:System/sparse
 Base:System/gpg2
 Base:System/gpgme
+Base:System/libassuan
 Base:System/elfutils
 Base:System/bootsplash-branding-openSUSE
 Base:System/procps
