@@ -83,6 +83,7 @@ Base:System/polkit
 Base:System/polkit-default-privs
 Base:System/systemd
 Base:System/udev
+Base:System/insserv
 
 # services that need updating due to aaa_base being newer:
 security:chipcard/pcsc-lite
