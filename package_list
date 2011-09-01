@@ -62,6 +62,7 @@ Base:System/attr
 Base:System/acl
 Base:System/mc
 Base:System/sparse
+Base:System/file
 Base:System/gpg2
 Base:System/gpgme
 Base:System/libassuan
