@@ -62,6 +62,7 @@ Base:System/attr
 Base:System/acl
 Base:System/mc
 Base:System/sparse
+Base:System/file
 Base:System/gpg2
 Base:System/gpgme
 Base:System/libassuan
@@ -222,6 +223,8 @@ multimedia:libs/libao
 multimedia:libs/libsndfile
 multimedia:libs/libvpx
 multimedia:libs/openal-soft
+# pulse needs json
+devel:libraries:c_c++/json-c
 multimedia:libs/pulseaudio
 multimedia:libs/taglib
 multimedia:libs/usbmuxd
@@ -266,6 +269,7 @@ openSUSE:Tools/osc-source_validator
 #
 # lxde
 #
+X11:lxde/libfm
 X11:lxde/lxappearance
 X11:lxde/lxcc
 X11:lxde/lxde-common
