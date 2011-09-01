@@ -222,6 +222,8 @@ multimedia:libs/libao
 multimedia:libs/libsndfile
 multimedia:libs/libvpx
 multimedia:libs/openal-soft
+# pulse needs json
+devel:libraries:c_c++/json-c
 multimedia:libs/pulseaudio
 multimedia:libs/taglib
 multimedia:libs/usbmuxd
