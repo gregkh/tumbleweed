@@ -42,9 +42,7 @@ Kernel:stable/kernel-source
 # Run the kernel-link script to generate these if needed.
 
 Kernel:stable/kernel-firmware
-# preload comes from Base:System as that's the "canonical" version at the moment
 Kernel:stable/preload
-#Base:System/preload
 
 # systemtap is needed for new kernel versions
 devel:tools/systemtap
@@ -85,6 +83,8 @@ Base:System/polkit-default-privs
 Base:System/systemd
 Base:System/udev
 Base:System/insserv
+# systemd-gtk is linked to systemd to build that package in a separate manner.
+
 
 # services that need updating due to aaa_base being newer:
 security:chipcard/pcsc-lite
