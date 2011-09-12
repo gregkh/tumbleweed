@@ -181,6 +181,9 @@ editors/emacs
 editors/treeline
 
 
+# shells
+shells/bash
+
 #
 # Requested by Petr Uzel <petr.uzel@suse.cz> for his packages
 #
@@ -199,8 +202,6 @@ editors/treeline
 #
 #server:mail/exim
 
-# Base:System good stuff
-#Base:System/aaa_base
 
 # LibreOffice
 # see the libreoffice file
