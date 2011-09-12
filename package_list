@@ -106,6 +106,7 @@ network:vpn/openvpn
 network/ypbind
 openSUSE:Factory/liboauth
 security/clamav
+network/vacuum-im
 
 #
 # Latest "stable" samba packages:
