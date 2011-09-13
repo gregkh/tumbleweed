@@ -42,7 +42,7 @@ Kernel:stable/kernel-source
 # Run the kernel-link script to generate these if needed.
 
 Kernel:stable/kernel-firmware
-Kernel:stable/preload
+openSUSE:11.4:Update/preload
 
 # systemtap is needed for new kernel versions
 devel:tools/systemtap
