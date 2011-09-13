@@ -89,6 +89,7 @@ Base:System/insserv
 # services that need updating due to aaa_base being newer:
 security:chipcard/pcsc-lite
 Base:System/nfs-utils
+Base:System/nfsidmap
 network/smpppd
 
 
