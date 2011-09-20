@@ -80,10 +80,11 @@ Base:System/filesystem
 Base:System/mkinitrd
 Base:System/polkit
 Base:System/polkit-default-privs
-Base:System/systemd
 Base:System/udev
 Base:System/insserv
 # systemd-gtk is linked to systemd to build that package in a separate manner.
+# but systemd doesn't work so well in tumbleweed now, so disable it.
+#Base:System/systemd
 
 
 # services that need updating due to aaa_base being newer:
@@ -132,6 +133,9 @@ devel:tools:scm/mercurial
 
 # who doesn't like dwarves?
 devel:tools/dwarves
+
+# for the 3.0 kernel, we need new ketchup
+devel:tools/ketchup
 
 #
 # filesystem fun
@@ -243,12 +247,15 @@ multimedia:apps/rosegarden
 #
 # Banshee 2!
 #
-Banshee/banshee-1
+Banshee/banshee
 Banshee/banshee-community-extensions
 Banshee/gio-sharp
 Banshee/gkeyfile-sharp
 Banshee/gtk-sharp-beans
 Banshee/gudev-sharp
+Banshee/dbus-sharp
+Banshee/dbus-sharp-glib
+Mono/notify-sharp
 #Banshee/libgpod
 multimedia:libs/libgpod
 #Banshee/libimobiledevice
