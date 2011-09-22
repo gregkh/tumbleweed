@@ -65,7 +65,7 @@ Base:System/gpg2
 Base:System/gpgme
 Base:System/libassuan
 Base:System/elfutils
-Base:System/bootsplash-branding-openSUSE
+#Base:System/bootsplash-branding-openSUSE
 Base:System/procps
 Base:System/microcode_ctl
 Base:System/upower
