@@ -193,8 +193,8 @@ shells/bash
 # Requested by Petr Uzel <petr.uzel@suse.cz> for his packages
 #
 #Base:System/hdparm
-#Base:System/parted
-#Base:System/util-linux
+Base:System/parted
+Base:System/util-linux
 #Base:System/sysstat
 #devel:tools:building/ccache
 #network/rsync
