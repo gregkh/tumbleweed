@@ -56,8 +56,8 @@ devel:tools/perf
 # Packages linked from Base:System:
 #
 Base:System/usbutils
-Base:System/attr
-Base:System/acl
+#Base:System/attr
+#Base:System/acl
 Base:System/mc
 Base:System/sparse
 Base:System/file
