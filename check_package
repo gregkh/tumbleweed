@@ -33,8 +33,8 @@ XFCE_REPO="openSUSE:Tumbleweed:xfce"
 compare_version() {
 
 	BASE_LINK=`osc log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
-	osc api $REPO/$PACKAGE | grep link...
 
+#	osc api $REPO/$PACKAGE | grep link...
 #echo $BASE_LINK
 
 	if [ "$BASE_LINK" = "" ]
@@ -43,7 +43,7 @@ compare_version() {
 		exit 1
 	fi
 
-osc api /source/X11:xfce/midori | grep linkinfo | grep xsrcmd5
+#osc api /source/X11:xfce/midori | grep linkinfo | grep xsrcmd5
 
 
 	TUMBLE_LINK=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
