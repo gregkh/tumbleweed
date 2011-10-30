@@ -230,6 +230,8 @@ multimedia:libs/gstreamer-0_10-plugins-gl
 multimedia:libs/gstreamer-0_10-plugins-good
 multimedia:libs/gstreamer-0_10-plugins-ugly
 multimedia:libs/libao
+multimedia:libs/libebml
+multimedia:libs/libmatroska
 multimedia:libs/libsndfile
 multimedia:libs/libvpx
 multimedia:libs/openal-soft
