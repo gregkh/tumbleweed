@@ -110,6 +110,7 @@ network/ypbind
 openSUSE:Factory/liboauth
 security/clamav
 network/vacuum-im
+network/libqxmpp1
 
 #
 # Latest "stable" samba packages:
