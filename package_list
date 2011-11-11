@@ -177,6 +177,7 @@ devel:languages:R:base/R
 # graphic stuff
 graphics/hugin
 graphics/libpano
+graphics/tclap
 
 #
 # Editors, we can't live without them
