@@ -45,6 +45,7 @@ GNOME:STABLE:3.0/gedit-plugins
 GNOME:STABLE:3.0/geoclue
 GNOME:STABLE:3.0/gir-repository
 GNOME:STABLE:3.0/gjs
+GNOME:STABLE:3.0/glade
 GNOME:STABLE:3.0/glib-networking
 GNOME:STABLE:3.0/glib2
 GNOME:STABLE:3.0/glib2-branding-openSUSE
@@ -90,6 +91,7 @@ GNOME:STABLE:3.0/gnome-web-photo
 GNOME:STABLE:3.0/gobject-introspection
 GNOME:STABLE:3.0/gsettings-desktop-schemas
 GNOME:STABLE:3.0/gtk-doc
+GNOME:STABLE:3.0/gtk-vnc
 GNOME:STABLE:3.0/gtk-vnc3
 GNOME:STABLE:3.0/gtk3
 GNOME:STABLE:3.0/gtkhtml2
@@ -143,6 +145,7 @@ GNOME:STABLE:3.0/pango
 GNOME:STABLE:3.0/pangomm
 GNOME:STABLE:3.0/pidgin
 GNOME:STABLE:3.0/polkit
+GNOME:STABLE:3.0/polkit-default-privs
 GNOME:STABLE:3.0/polkit-gnome
 GNOME:STABLE:3.0/poppler
 GNOME:STABLE:3.0/python-atspi
@@ -172,6 +175,7 @@ GNOME:STABLE:3.0/upower
 GNOME:STABLE:3.0/vala
 GNOME:STABLE:3.0/vinagre
 GNOME:STABLE:3.0/vino
+GNOME:STABLE:3.0/virt-manager
 GNOME:STABLE:3.0/vte
 GNOME:STABLE:3.0/vte3
 GNOME:STABLE:3.0/wpa_supplicant
