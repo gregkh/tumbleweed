@@ -76,7 +76,7 @@ devel:openSUSE:Factory/grub2
 
 # systemd stuff:
 Base:System/aaa_base
-Base:System/filesystem
+#Base:System/filesystem
 Base:System/mkinitrd
 Base:System/polkit
 Base:System/polkit-default-privs
