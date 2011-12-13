@@ -42,112 +42,105 @@ Kernel:stable/kernel-source
 # Run the kernel-link script to generate these if needed.
 
 Kernel:stable/kernel-firmware
-openSUSE:11.4:Update/preload
+#openSUSE:11.4:Update/preload
 
 # systemtap is needed for new kernel versions
-devel:tools/systemtap
+#devel:tools/systemtap
 
 # new valgrind needed for 3.0 kernel versions
-devel:tools/valgrind
+#devel:tools/valgrind
 
-devel:tools/perf
+#devel:tools/perf
 
 #
 # Packages linked from Base:System:
 #
-Base:System/usbutils
-#Base:System/attr
-#Base:System/acl
-Base:System/mc
-Base:System/sparse
-Base:System/file
-Base:System/gpg2
-Base:System/gpgme
-Base:System/libassuan
-Base:System/elfutils
-#Base:System/bootsplash-branding-openSUSE
-Base:System/procps
-Base:System/microcode_ctl
-Base:System/upower
-Base:System/screen
-Base:System/laptop-mode-tools
+#Base:System/usbutils
+#Base:System/mc
+#Base:System/sparse
+#Base:System/file
+#Base:System/gpg2
+#Base:System/gpgme
+#Base:System/libassuan
+#Base:System/elfutils
+#Base:System/procps
+#Base:System/microcode_ctl
+#Base:System/upower
+#Base:System/screen
+#Base:System/laptop-mode-tools
 
-devel:openSUSE:Factory/grub2
+#devel:openSUSE:Factory/grub2
 
 # systemd stuff:
-Base:System/aaa_base
-#Base:System/filesystem
-Base:System/mkinitrd
-Base:System/polkit
-Base:System/polkit-default-privs
-Base:System/udev
-Base:System/insserv
-# systemd-gtk is linked to systemd to build that package in a separate manner.
-# but systemd doesn't work so well in tumbleweed now, so disable it.
-#Base:System/systemd
+#Base:System/aaa_base
+#Base:System/mkinitrd
+#Base:System/polkit
+#Base:System/polkit-default-privs
+#Base:System/udev
+#Base:System/insserv
 
 
 # services that need updating due to aaa_base being newer:
-security:chipcard/pcsc-lite
-Base:System/libgssglue
-Base:System/nfs-utils
-Base:System/nfsidmap
-network/smpppd
+#security:chipcard/pcsc-lite
+#Base:System/libgssglue
+#Base:System/nfs-utils
+#Base:System/nfsidmap
+#network/smpppd
 
 
 # needed for polkit-default-privs to be in rpmlint, so that rpmlint doesn't
 # fail during build of systemd.
-devel:openSUSE:Factory:rpmlint/rpmlint
-devel:openSUSE:Factory:rpmlint/rpmlint-mini
+#devel:openSUSE:Factory:rpmlint/rpmlint
+#devel:openSUSE:Factory:rpmlint/rpmlint-mini
 
 # networking tools
-security:netfilter/iproute2
-security:netfilter/iptables
-network:utilities/ethtool
-network/unison
-network:vpn/openvpn
-network/ypbind
-openSUSE:Factory/liboauth
-security/clamav
-network/vacuum-im
-network/vacuum-im-plugins-spellchecker
-network/vacuum-im-plugins-dbusnotifications
-network/vacuum-im-plugins-gmailnotify
-network/vacuum-im-plugins-kinotifications
-network/libqxmpp1
+#security:netfilter/iproute2
+#security:netfilter/iptables
+#network:utilities/ethtool
+#network/unison
+#network:vpn/openvpn
+#network/ypbind
+#openSUSE:Factory/liboauth
+#security/clamav
+#network/vacuum-im
+#network/vacuum-im-plugins-spellchecker
+#network/vacuum-im-plugins-dbusnotifications
+#network/vacuum-im-plugins-gmailnotify
+#network/vacuum-im-plugins-kinotifications
+#network/libqxmpp1
 
 #
 # Latest "stable" samba packages:
 #
-network:samba:STABLE/cifs-utils
-network:samba:STABLE/ctdb
-#network:samba:STABLE/libiniparser
-network:samba:STABLE/samba
-#network:samba:STABLE/samba-doc
-network:samba:misc/smbtad
-network:samba:misc/smbtatools
+#network:samba:STABLE/cifs-utils
+#network:samba:STABLE/ctdb
+#network:samba:STABLE/samba
+#network:samba:misc/smbtad
+#network:samba:misc/smbtatools
 
 #
 # git is good
 #
 devel:tools:scm/git
-devel:tools:scm/tig
+#devel:tools:scm/tig
 
 # so is mercurial
-devel:tools:scm/mercurial
+#devel:tools:scm/mercurial
 
+# quilt is essencial
+devel:tools:scm/quilt
 
 # who doesn't like dwarves?
-devel:tools/dwarves
+#devel:tools/dwarves
 
 # for the 3.0 kernel, we need new ketchup
-devel:tools/ketchup
+#devel:tools/ketchup
 
 #
 # filesystem fun
 #
 #filesystems/fuse
-filesystems/btrfsprogs
+#filesystems/btrfsprogs
 
 #
 # Latest "stable" apache2
@@ -160,62 +153,56 @@ filesystems/btrfsprogs
 # Stuff requested by Greg KH <gregkh@suse.de> for stuff he uses
 # all the time
 #
-server:mail/offlineimap
-server:mail/mutt
+#server:mail/offlineimap
+#server:mail/mutt
 
 # other mail stuff:
-server:mail/tnef
-server:mail/courier-imap
-server:mail/dovecot20
-server:mail/dovecot12
+#server:mail/tnef
+#server:mail/courier-imap
+#server:mail/dovecot20
+#server:mail/dovecot12
 
 #
 # Publishing tools
 #
-Publishing/texmaker
+#Publishing/texmaker
 
 
 # The R language stuff
-devel:languages:R:base/R
+#devel:languages:R:base/R
 
 # graphic stuff
-graphics/hugin
-graphics/libpano
-graphics/tclap
+#graphics/hugin
+#graphics/libpano
+#graphics/tclap
 
 #
 # Editors, we can't live without them
 #
-editors/vim
-editors/vim-plugins
-editors/nano
-editors/emacs
-editors/treeline
+#editors/vim
+#editors/vim-plugins
+#editors/nano
+#editors/emacs
+#editors/treeline
 
 
 # shells
-shells/bash
+#shells/bash
 
 #
 # Requested by Petr Uzel <petr.uzel@suse.cz> for his packages
 #
-#Base:System/hdparm
-Base:System/parted
-Base:System/util-linux
-devel:tools:building/cmake
-devel:tools:building/cmake-gui
-#Base:System/sysstat
-#devel:tools:building/ccache
-#network/rsync
-#network:utilities/ethtool
-#network:utilities/whois
-#server:mail/fetchmail
-
-#
-# Requested by Lars Müller <lmuelle@suse.de>
-#
-#server:mail/exim
-
+##Base:System/hdparm
+#Base:System/parted
+#Base:System/util-linux
+#devel:tools:building/cmake
+#devel:tools:building/cmake-gui
+##Base:System/sysstat
+##devel:tools:building/ccache
+##network/rsync
+##network:utilities/ethtool
+##network:utilities/whois
+##server:mail/fetchmail
 
 # LibreOffice
 # see the libreoffice file
@@ -223,63 +210,53 @@ devel:tools:building/cmake-gui
 #
 # Multimedia stuff requested by Takashi and others
 #
-multimedia:apps/awesfx
-multimedia:apps/hydrogen
-multimedia:apps/vorbis-tools
-multimedia:apps/mkvtoolnix
-multimedia:libs/alsa
-multimedia:libs/gstreamer-0_10
-multimedia:libs/gstreamer-0_10-doc
-multimedia:libs/gstreamer-0_10-plugins-bad
-multimedia:libs/gstreamer-0_10-plugins-base
-multimedia:libs/gstreamer-0_10-plugins-gl
-multimedia:libs/gstreamer-0_10-plugins-good
-multimedia:libs/gstreamer-0_10-plugins-ugly
-multimedia:libs/libao
-multimedia:libs/libebml
-multimedia:libs/libmatroska
-multimedia:libs/libsndfile
-multimedia:libs/libvpx
-multimedia:libs/openal-soft
+#multimedia:apps/awesfx
+#multimedia:apps/hydrogen
+#multimedia:apps/vorbis-tools
+#multimedia:apps/mkvtoolnix
+#multimedia:libs/alsa
+#multimedia:libs/gstreamer-0_10
+#multimedia:libs/gstreamer-0_10-doc
+#multimedia:libs/gstreamer-0_10-plugins-bad
+#multimedia:libs/gstreamer-0_10-plugins-base
+#multimedia:libs/gstreamer-0_10-plugins-gl
+#multimedia:libs/gstreamer-0_10-plugins-good
+#multimedia:libs/gstreamer-0_10-plugins-ugly
+#multimedia:libs/libao
+#multimedia:libs/libebml
+#multimedia:libs/libmatroska
+#multimedia:libs/libsndfile
+#multimedia:libs/libvpx
+#multimedia:libs/openal-soft
 # pulse needs json
-devel:libraries:c_c++/json-c
-multimedia:libs/pulseaudio
-multimedia:libs/taglib
-multimedia:libs/usbmuxd
-multimedia:libs/vcdimager
+#devel:libraries:c_c++/json-c
+#multimedia:libs/pulseaudio
+#multimedia:libs/taglib
+#multimedia:libs/usbmuxd
+#multimedia:libs/vcdimager
 
 # jack
-multimedia:libs/jack
-multimedia:apps/qjackctl
-multimedia:apps/rosegarden
+#multimedia:libs/jack
+#multimedia:apps/qjackctl
+#multimedia:apps/rosegarden
 
 
 
 #
 # Banshee 2!
 #
-Banshee/banshee
-Banshee/banshee-community-extensions
-Banshee/gio-sharp
-Banshee/gkeyfile-sharp
-Banshee/gtk-sharp-beans
-Banshee/gudev-sharp
-Banshee/dbus-sharp
-Banshee/dbus-sharp-glib
-Mono/notify-sharp
-#Banshee/libgpod
-multimedia:libs/libgpod
-#Banshee/libimobiledevice
-multimedia:libs/libimobiledevice
-#Banshee/libplist
-multimedia:libs/libplist
-#Banshee/libwebkit
-#Banshee/mono-addins
-#Banshee/mono-zeroconf
-#Banshee/ndesk-dbus
-#Banshee/ndesk-dbus-glib
-#Banshee/podsleuth
-#Banshee/taglib-sharp
+#Banshee/banshee
+#Banshee/banshee-community-extensions
+#Banshee/gio-sharp
+#Banshee/gkeyfile-sharp
+#Banshee/gtk-sharp-beans
+#Banshee/gudev-sharp
+#Banshee/dbus-sharp
+#Banshee/dbus-sharp-glib
+#Mono/notify-sharp
+#multimedia:libs/libgpod
+#multimedia:libs/libimobiledevice
+#multimedia:libs/libplist
 
 #
 # osc tools
@@ -290,26 +267,26 @@ openSUSE:Tools/osc-source_validator
 #
 # lxde
 #
-X11:lxde/libfm
-X11:lxde/lxappearance
-X11:lxde/lxcc
-X11:lxde/lxde-common
-X11:lxde/lxde-common-branding-openSUSE
-X11:lxde/lxdm
-X11:lxde/lxinput
-X11:lxde/lxlauncher
-X11:lxde/lxmenu-data
-X11:lxde/lxmusic
-X11:lxde/lxpanel
-X11:lxde/lxpolkit
-X11:lxde/lxrandr
-X11:lxde/lxsession
-X11:lxde/lxsession-edit
-X11:lxde/lxshortcut
-X11:lxde/lxtask
-X11:lxde/lxterminal
-#X11:lxde/openbox
-X11:lxde/pcmanfm
+#X11:lxde/libfm
+#X11:lxde/lxappearance
+#X11:lxde/lxcc
+#X11:lxde/lxde-common
+#X11:lxde/lxde-common-branding-openSUSE
+#X11:lxde/lxdm
+#X11:lxde/lxinput
+#X11:lxde/lxlauncher
+#X11:lxde/lxmenu-data
+#X11:lxde/lxmusic
+#X11:lxde/lxpanel
+#X11:lxde/lxpolkit
+#X11:lxde/lxrandr
+#X11:lxde/lxsession
+#X11:lxde/lxsession-edit
+#X11:lxde/lxshortcut
+#X11:lxde/lxtask
+#X11:lxde/lxterminal
+##X11:lxde/openbox
+#X11:lxde/pcmanfm
 
 #
 # Documentation tools
@@ -319,4 +296,4 @@ X11:lxde/pcmanfm
 #
 # Everyone likes games
 #
-games/bomberclone
+#games/bomberclone
