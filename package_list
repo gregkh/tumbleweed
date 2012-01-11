@@ -136,6 +136,9 @@ devel:tools:scm/quilt
 # for the 3.0 kernel, we need new ketchup
 #devel:tools/ketchup
 
+# kernel.org users need kup
+devel:tools/kup
+
 #
 # filesystem fun
 #
@@ -154,7 +157,7 @@ devel:tools:scm/quilt
 # all the time
 #
 #server:mail/offlineimap
-#server:mail/mutt
+server:mail/mutt
 
 # other mail stuff:
 #server:mail/tnef
@@ -297,3 +300,6 @@ openSUSE:Tools/osc-source_validator
 # Everyone likes games
 #
 #games/bomberclone
+
+# window managers
+openSUSE:Factory/i3
