@@ -172,18 +172,21 @@ server:mail/mutt
 
 
 # The R language stuff
-#devel:languages:R:base/R
+devel:languages:R:base/R
+devel:languages:R:supplement/rkward
 
 # graphic stuff
 #graphics/hugin
 #graphics/libpano
 #graphics/tclap
+graphics/darktable
+
 
 #
 # Editors, we can't live without them
 #
-#editors/vim
-#editors/vim-plugins
+editors/vim
+editors/vim-plugins
 #editors/nano
 #editors/emacs
 #editors/treeline
@@ -294,7 +297,8 @@ openSUSE:Tools/osc-source_validator
 #
 # Documentation tools
 #
-#Documentation:Tools/calibre	# needs newer python which we don't have yet
+#Documentation:Tools/calibre
+openSUSE:Factory/calibre
 
 #
 # Everyone likes games
@@ -303,3 +307,13 @@ openSUSE:Tools/osc-source_validator
 
 # window managers
 openSUSE:Factory/i3
+
+# exiftool
+openSUSE:Factory/perl-Image-ExifTool
+
+# graphic tools
+openSUSE:Factory/gimp
+openSUSE:Factory/digikam
+
+# Apparmor
+security:apparmor:factory/apparmor
