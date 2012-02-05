@@ -68,6 +68,8 @@ Kernel:stable/kernel-firmware
 #Base:System/upower
 #Base:System/screen
 #Base:System/laptop-mode-tools
+Base:System/pciutils
+openSUSE:Factory/pciutils-ids
 
 #devel:openSUSE:Factory/grub2
 
