@@ -158,7 +158,7 @@ devel:tools/kup
 # Stuff requested by Greg KH <gregkh@suse.de> for stuff he uses
 # all the time
 #
-#server:mail/offlineimap
+server:mail/offlineimap
 server:mail/mutt
 
 # other mail stuff:
