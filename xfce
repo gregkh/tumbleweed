@@ -1,14 +1,17 @@
 X11:xfce/epdfview
 X11:xfce/exo
-#X11:xfce/gigolo
+X11:xfce/gigolo
+#X11:xfce/glyr
+#X11:xfce/greybird-theme
 X11:xfce/gtk-xfce-engine
 #X11:xfce/gtk2-engine-murrine
 #X11:xfce/gtk2-theme-murrine
 #X11:xfce/gtk2-theme-nimbus
-#X11:xfce/keybinder
+X11:xfce/keybinder
 #X11:xfce/kiwi-live-xfce
 X11:xfce/libburnia
-#X11:xfce/libgarcon
+#X11:xfce/libclastfm0
+X11:xfce/libgarcon
 #X11:xfce/libmpd
 X11:xfce/libxfce4menu
 X11:xfce/libxfce4ui
@@ -18,6 +21,8 @@ X11:xfce/midori
 #X11:xfce/mousepad
 X11:xfce/orage
 X11:xfce/parole
+X11:xfce/pk-update-icon
+#X11:xfce/pragha
 X11:xfce/pyxfce
 X11:xfce/ristretto
 X11:xfce/Terminal
@@ -29,8 +34,8 @@ X11:xfce/thunar-plugin-vcs
 X11:xfce/thunar-volman
 X11:xfce/thunarx-python
 X11:xfce/tumbler
-#X11:xfce/whaawmp
-#X11:xfce/xarchiver
+X11:xfce/whaawmp
+X11:xfce/xarchiver
 X11:xfce/xfburn
 X11:xfce/xfce-utils
 X11:xfce/xfce4-appfinder
@@ -56,6 +61,7 @@ X11:xfce/xfce4-panel-plugin-mailwatch
 X11:xfce/xfce4-panel-plugin-mount
 X11:xfce/xfce4-panel-plugin-mpc
 X11:xfce/xfce4-panel-plugin-netload
+X11:xfce/xfce4-panel-plugin-netspeed
 X11:xfce/xfce4-panel-plugin-notes
 X11:xfce/xfce4-panel-plugin-places
 X11:xfce/xfce4-panel-plugin-quicklauncher
@@ -80,7 +86,6 @@ X11:xfce/xfce4-volumed
 X11:xfce/xfconf
 X11:xfce/xfdesktop
 X11:xfce/xfmpc
-#X11:xfce/xfprint
 X11:xfce/xfvnc
 X11:xfce/xfwm4
 X11:xfce/xfwm4-themes
