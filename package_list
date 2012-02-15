@@ -57,7 +57,7 @@ Kernel:stable/kernel-firmware
 #
 #Base:System/usbutils
 #Base:System/mc
-#Base:System/sparse
+Base:System/sparse
 #Base:System/file
 #Base:System/gpg2
 #Base:System/gpgme
