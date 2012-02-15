@@ -50,7 +50,7 @@ Kernel:stable/kernel-firmware
 # new valgrind needed for 3.0 kernel versions
 #devel:tools/valgrind
 
-#devel:tools/perf
+devel:tools/perf
 
 #
 # Packages linked from Base:System:
