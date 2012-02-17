@@ -316,6 +316,8 @@ openSUSE:Factory/perl-Image-ExifTool
 # graphic tools
 openSUSE:Factory/gimp
 openSUSE:Factory/digikam
+# needed by digikam
+KDE:Distro:Factory/libkvkontakte
 
 # Apparmor
 security:apparmor:factory/apparmor
