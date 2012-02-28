@@ -55,6 +55,7 @@ devel:tools/perf
 #
 # Packages linked from Base:System:
 #
+Base:System/diffutils
 #Base:System/usbutils
 #Base:System/mc
 Base:System/sparse
