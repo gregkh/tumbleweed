@@ -52,6 +52,9 @@ while read line
 do
 	# remove lines that start with a # and all whitespace in the line
 	line=`echo $line | sed -e '/^#/d' | sed -e 's/^[ \t]*//;s/[ \t]*$//'`
+	if [ "${line}" = "STOP_NOW" ] ; then
+		exit 1
+	fi
 	if [ "$line" != "" ]
 	then
 		./check_package --repo $REPO $line
