@@ -244,6 +244,9 @@ editors/vim-plugins
 #multimedia:libs/usbmuxd
 #multimedia:libs/vcdimager
 
+multimedia:apps/clementine
+
+
 # jack
 #multimedia:libs/jack
 #multimedia:apps/qjackctl
