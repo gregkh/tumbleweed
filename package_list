@@ -329,4 +329,4 @@ security:apparmor:factory/apparmor
 
 #GNOME:Apps/shotwell
 
-Emulators:Wine:STABLE/wine
+#Emulators:Wine:STABLE/wine
