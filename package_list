@@ -161,6 +161,7 @@ devel:tools/kup
 #
 server:mail/offlineimap
 server:mail/mutt
+server:mail/imapfilter
 
 # other mail stuff:
 #server:mail/tnef
@@ -325,3 +326,7 @@ KDE:Distro:Factory/libkvkontakte
 
 # Apparmor
 security:apparmor:factory/apparmor
+
+#GNOME:Apps/shotwell
+
+Emulators:Wine:STABLE/wine
