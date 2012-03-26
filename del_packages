@@ -31,7 +31,7 @@ do
 	line=`echo $line | sed -e '/^#/d' | sed -e 's/^[ \t]*//;s/[ \t]*$//'`
 	if [ "$line" != "" ]
 	then
-		echo "echo \"deleting $line\" "
-		echo "osc rdelete openSUSE:Tumbleweed:Raw $line"
+		echo "echo \"deleting $line\""
+		echo "osc rdelete openSUSE:Tumbleweed:Testing $line -m \"delete the package\""
 	fi
 done < $FILE
