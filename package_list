@@ -327,7 +327,7 @@ openSUSE:Factory/gimp
 #KDE:Distro:Factory/libkvkontakte
 
 # Apparmor
-security:apparmor:factory/apparmor
+openSUSE:Factory/apparmor
 
 #GNOME:Apps/shotwell
 
