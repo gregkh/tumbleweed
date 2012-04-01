@@ -332,3 +332,8 @@ openSUSE:Factory/apparmor
 #GNOME:Apps/shotwell
 
 #Emulators:Wine:STABLE/wine
+
+openSUSE:Factory/ext4magic
+
+Publishing/plotutils
+Publishing/gnuplot
