@@ -17,7 +17,6 @@ X11:xfce/libxfce4ui
 X11:xfce/libxfce4util
 X11:xfce/libxfcegui4
 X11:xfce/midori
-#X11:xfce/mousepad
 X11:xfce/orage
 X11:xfce/parole
 X11:xfce/pk-update-icon
@@ -34,7 +33,6 @@ X11:xfce/thunar-volman
 X11:xfce/thunarx-python
 X11:xfce/tumbler
 X11:xfce/whaawmp
-X11:xfce/xarchiver
 X11:xfce/xfburn
 X11:xfce/xfce-utils
 X11:xfce/xfce4-appfinder
@@ -46,7 +44,6 @@ X11:xfce/xfce4-mixer
 X11:xfce/xfce4-notifyd
 X11:xfce/xfce4-panel
 X11:xfce/xfce4-panel-plugin-battery
-X11:xfce/xfce4-panel-plugin-cddrive
 X11:xfce/xfce4-panel-plugin-cellmodem
 X11:xfce/xfce4-panel-plugin-clipman
 X11:xfce/xfce4-panel-plugin-cpufreq
