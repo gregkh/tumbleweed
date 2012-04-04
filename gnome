@@ -42,7 +42,7 @@ GNOME:STABLE:3.2/folks
 #GNOME:STABLE:3.2/gcalctool
 #GNOME:STABLE:3.2/gconf-editor
 GNOME:STABLE:3.2/gconf2
-#GNOME:STABLE:3.2/gconf2-branding-openSUSE
+GNOME:STABLE:3.2/gconf2-branding-openSUSE
 #GNOME:STABLE:3.2/gdk-pixbuf
 #GNOME:STABLE:3.2/gdl
 #GNOME:STABLE:3.2/gdm
@@ -56,14 +56,14 @@ GNOME:STABLE:3.2/gjs
 #GNOME:STABLE:3.2/glade
 #GNOME:STABLE:3.2/glib-networking
 GNOME:STABLE:3.2/glib2
-#GNOME:STABLE:3.2/glib2-branding-openSUSE
+GNOME:STABLE:3.2/glib2-branding-openSUSE
 #GNOME:STABLE:3.2/glibmm2
 #GNOME:STABLE:3.2/gnome-backgrounds
 #GNOME:STABLE:3.2/gnome-bluetooth
 #GNOME:STABLE:3.2/gnome-color-manager
 #GNOME:STABLE:3.2/gnome-contacts
 GNOME:STABLE:3.2/gnome-control-center
-#GNOME:STABLE:3.2/gnome-control-center-branding-openSUSE
+GNOME:STABLE:3.2/gnome-control-center-branding-openSUSE
 #GNOME:STABLE:3.2/gnome-desktop
 #GNOME:STABLE:3.2/gnome-devel-docs
 #GNOME:STABLE:3.2/gnome-disk-utility
@@ -111,7 +111,7 @@ GNOME:STABLE:3.2/gnome-user-docs
 #GNOME:STABLE:3.2/gtk-vnc
 #GNOME:STABLE:3.2/gtk2
 GNOME:STABLE:3.2/gtk3
-#GNOME:STABLE:3.2/gtk3-branding-openSUSE
+GNOME:STABLE:3.2/gtk3-branding-openSUSE
 #GNOME:STABLE:3.2/gtkhtml
 #GNOME:STABLE:3.2/gtkmm3
 #GNOME:STABLE:3.2/gtksourceview
