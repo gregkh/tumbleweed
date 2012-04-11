@@ -343,3 +343,6 @@ openSUSE:Factory/ext4magic
 
 Publishing/plotutils
 Publishing/gnuplot
+
+# gcc?
+#devel:gcc/gcc46
