@@ -346,3 +346,6 @@ Publishing/gnuplot
 
 # gcc?
 #devel:gcc/gcc46
+
+#lyx?
+#Publishing/lyx
