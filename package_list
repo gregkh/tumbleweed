@@ -311,6 +311,7 @@ openSUSE:Tools/osc-source_validator
 # Documentation tools
 #
 #Documentation:Tools/calibre
+openSUSE:Factory/python-cssutils
 openSUSE:Factory/calibre
 
 #
