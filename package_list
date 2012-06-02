@@ -352,3 +352,5 @@ Publishing/gnuplot
 Publishing/lyx
 
 utilities/udev-browse
+
+network:utilities/nmap
