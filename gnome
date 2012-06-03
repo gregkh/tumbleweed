@@ -224,3 +224,7 @@ GNOME:STABLE:3.2/vino
 #GNOME:STABLE:3.2/zeitgeist
 #GNOME:STABLE:3.2/zeitgeist-datahub
 #GNOME:STABLE:3.2/zenity
+
+# Cinnamon stuff
+GNOME:Cinnamon/cinnamon
+GNOME:Cinnamon/muffin
