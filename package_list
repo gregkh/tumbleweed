@@ -354,3 +354,5 @@ Publishing/lyx
 utilities/udev-browse
 
 network:utilities/nmap
+
+KDE:Distro:Factory/qutim
