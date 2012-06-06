@@ -74,6 +74,7 @@ openSUSE:Factory/pciutils-ids
 
 Base:System/module-init-tools
 Base:System/kmod
+Base:System/powertop
 
 #devel:openSUSE:Factory/grub2
 
