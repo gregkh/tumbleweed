@@ -149,8 +149,9 @@ devel:tools/kup
 #
 # filesystem fun
 #
-#filesystems/fuse
-#filesystems/btrfsprogs
+filesystems/fuse
+filesystems/btrfsprogs
+filesystems/e2fsprogs
 
 #
 # Latest "stable" apache2
@@ -357,3 +358,15 @@ utilities/udev-browse
 network:utilities/nmap
 
 KDE:Distro:Factory/qutim
+
+# Virtualization stuff
+Virtualization/hyper-v
+Virtualization/spice
+Virtualization/spice-protocol
+Virtualization/libvirt
+Virtualization/libvirt-cim
+Virtualization/libvirt-glib
+Virtualization/kvm
+Virtualization/qemu
+Virtualization/virt-manager
+Virtualization/celt051
