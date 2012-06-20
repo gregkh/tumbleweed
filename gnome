@@ -17,6 +17,7 @@ GNOME:STABLE:3.4/p11-kit
 GNOME:STABLE:3.4/pango
 GNOME:STABLE:3.4/vte
 GNOME:STABLE:3.4/vte2
+GNOME:STABLE:3.4/gconf2
 
 
 # 3.2 stuff, will slowly get replaced with 3.4 stuff
@@ -29,7 +30,6 @@ GNOME:STABLE:3.2/empathy
 GNOME:STABLE:3.2/eog
 GNOME:STABLE:3.2/file-roller
 GNOME:STABLE:3.2/folks
-GNOME:STABLE:3.2/gconf2
 GNOME:STABLE:3.2/gjs
 GNOME:STABLE:3.2/gnome-control-center
 GNOME:STABLE:3.2/gnome-keyring
