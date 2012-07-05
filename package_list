@@ -16,6 +16,11 @@
 #	osc rdelete openSUSE:Tumbleweed:Testing PACKAGE_NAME
 #
 
+# preinstall packages to speed up building
+openSUSE:Factory/preinstallimage-xorg-x11-devel
+openSUSE:Factory/preinstallimage-minimal
+openSUSE:Factory/preinstallimage-base
+
 
 #
 # Kernel
@@ -75,6 +80,10 @@ openSUSE:Factory/pciutils-ids
 Base:System/module-init-tools
 Base:System/kmod
 Base:System/powertop
+
+# Needed for gummiboot
+Base:System/gnu-efi
+Base:System/elilo
 
 #devel:openSUSE:Factory/grub2
 
