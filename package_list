@@ -20,6 +20,11 @@
 openSUSE:Factory/preinstallimage-xorg-x11-devel
 openSUSE:Factory/preinstallimage-minimal
 openSUSE:Factory/preinstallimage-base
+openSUSE:Factory/preinstallimage-qt3-devel
+openSUSE:Factory/preinstallimage-libX11-devel
+openSUSE:Factory/preinstallimage-libqt4
+openSUSE:Factory/preinstallimage-libkde4-devel
+openSUSE:Factory/preinstallimage-gtk2-devel
 
 
 #
