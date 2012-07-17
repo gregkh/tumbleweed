@@ -385,3 +385,4 @@ Virtualization/kvm
 Virtualization/qemu
 Virtualization/virt-manager
 Virtualization/celt051
+Virtualization/python-virtinst
