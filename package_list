@@ -61,24 +61,35 @@ Kernel:stable/kernel-firmware
 #devel:tools/valgrind
 
 devel:tools/perf
+devel:tools/patch
+devel:tools/patchutils
+devel:tools/diffstat
+devel:tools/valgrind
+devel:tools/dwarves
+devel:tools/strace
+devel:tools/wiggle
+devel:tools/ccache
 
 #
 # Packages linked from Base:System:
 #
+Base:System/dmidecode
 Base:System/diffutils
-#Base:System/usbutils
-#Base:System/mc
+Base:System/usbutils
+Base:System/tree
+Base:System/findutils
+Base:System/mc
 Base:System/sparse
-#Base:System/file
+Base:System/file
 #Base:System/gpg2
 #Base:System/gpgme
 #Base:System/libassuan
-#Base:System/elfutils
-#Base:System/procps
-#Base:System/microcode_ctl
-#Base:System/upower
-#Base:System/screen
-#Base:System/laptop-mode-tools
+Base:System/elfutils
+Base:System/procps
+Base:System/microcode_ctl
+Base:System/upower
+Base:System/screen
+Base:System/laptop-mode-tools
 Base:System/pciutils
 openSUSE:Factory/pciutils-ids
 
@@ -150,12 +161,6 @@ devel:tools:scm/mercurial
 
 # quilt is essencial
 devel:tools:scm/quilt
-
-# who doesn't like dwarves?
-#devel:tools/dwarves
-
-# for the 3.0 kernel, we need new ketchup
-#devel:tools/ketchup
 
 # kernel.org users need kup
 devel:tools/kup
