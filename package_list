@@ -274,6 +274,7 @@ KDE:KDE3/kdelibs3
 
 multimedia:apps/clementine
 
+vdr/dvb
 
 # jack
 #multimedia:libs/jack
