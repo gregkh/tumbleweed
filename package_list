@@ -54,12 +54,7 @@ Kernel:stable/kernel-source
 Kernel:stable/kernel-firmware
 #openSUSE:11.4:Update/preload
 
-# systemtap is needed for new kernel versions
-#devel:tools/systemtap
-
-# new valgrind needed for 3.0 kernel versions
-#devel:tools/valgrind
-
+devel:tools/systemtap
 devel:tools/perf
 devel:tools/patch
 devel:tools/patchutils
