@@ -344,7 +344,7 @@ devel:languages:perl/perl-AnyEvent-I3
 openSUSE:Factory/perl-Image-ExifTool
 
 # graphic tools
-openSUSE:Factory/gimp
+#openSUSE:Factory/gimp
 
 # digikam is now in the kde-4.8 package list
 #openSUSE:Factory/digikam
