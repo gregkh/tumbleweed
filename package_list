@@ -100,7 +100,7 @@ Base:System/elilo
 
 # systemd stuff:
 #Base:System/aaa_base
-#Base:System/mkinitrd
+Base:System/mkinitrd
 #Base:System/polkit
 #Base:System/polkit-default-privs
 #Base:System/udev
