@@ -106,6 +106,8 @@ Base:System/mkinitrd
 #Base:System/udev
 #Base:System/insserv
 
+# for tcpdump
+Base:System/libpcap
 
 # services that need updating due to aaa_base being newer:
 #security:chipcard/pcsc-lite
@@ -135,6 +137,8 @@ openSUSE:Factory/vacuum-im-plugins-dbusnotifications
 openSUSE:Factory/vacuum-im-plugins-gmailnotify
 openSUSE:Factory/vacuum-im-plugins-kinotifications
 #network/libqxmpp1
+
+network:utilities/tcpdump
 
 #
 # Latest "stable" samba packages:
