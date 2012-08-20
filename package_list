@@ -304,6 +304,8 @@ vdr/dvb
 openSUSE:Tools/osc
 openSUSE:Tools/osc-source_validator
 
+X11:common:Factory/xdg-utils
+
 #
 # lxde
 #
