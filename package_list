@@ -31,7 +31,7 @@ openSUSE:Factory/preinstallimage-gtk2-devel
 # Kernel
 #
 # The kernel package has one main package:
-Kernel:stable/kernel-source
+#Kernel:stable/kernel-source
 # Then the rest of the kernel packages are just links to that one in
 # order to handle the multiple parts of it.  This means the following
 # list of packages should not be touched at all, they get automatically
@@ -54,73 +54,51 @@ Kernel:stable/kernel-source
 Kernel:stable/kernel-firmware
 #openSUSE:11.4:Update/preload
 
-devel:tools/systemtap
-devel:tools/perf
-devel:tools/patch
-devel:tools/patchutils
-devel:tools/diffstat
-devel:tools/valgrind
-devel:tools/dwarves
-devel:tools/strace
-devel:tools/wiggle
-devel:tools/ccache
+#devel:tools/systemtap
+#devel:tools/perf
+#devel:tools/patch
+#devel:tools/patchutils
+#devel:tools/diffstat
+#devel:tools/valgrind
+#devel:tools/dwarves
+#devel:tools/strace
+#devel:tools/wiggle
+#devel:tools/ccache
 
 #
 # Packages linked from Base:System:
 #
-Base:System/dmidecode
-Base:System/diffutils
-Base:System/usbutils
-Base:System/tree
-Base:System/findutils
-Base:System/mc
-Base:System/sparse
-Base:System/file
-#Base:System/gpg2
-#Base:System/gpgme
-#Base:System/libassuan
-Base:System/elfutils
-Base:System/procps
-Base:System/microcode_ctl
-Base:System/upower
-Base:System/screen
-Base:System/laptop-mode-tools
-Base:System/pciutils
-openSUSE:Factory/pciutils-ids
+#Base:System/dmidecode
+#Base:System/diffutils
+#Base:System/usbutils
+#Base:System/tree
+#Base:System/findutils
+#Base:System/mc
+#Base:System/sparse
+#Base:System/file
+#Base:System/elfutils
+#Base:System/procps
+#Base:System/microcode_ctl
+#Base:System/upower
+#Base:System/screen
+#Base:System/laptop-mode-tools
+#Base:System/pciutils
+#openSUSE:Factory/pciutils-ids
 
-Base:System/module-init-tools
-Base:System/kmod
+#Base:System/module-init-tools
+#Base:System/kmod
 Base:System/powertop
 
 # Needed for gummiboot
-Base:System/gnu-efi
-Base:System/elilo
+#Base:System/gnu-efi
+#Base:System/elilo
 
 #devel:openSUSE:Factory/grub2
 
-# systemd stuff:
-#Base:System/aaa_base
-Base:System/mkinitrd
-#Base:System/polkit
-#Base:System/polkit-default-privs
-#Base:System/udev
-#Base:System/insserv
+#Base:System/mkinitrd
 
 # for tcpdump
-Base:System/libpcap
-
-# services that need updating due to aaa_base being newer:
-#security:chipcard/pcsc-lite
-#Base:System/libgssglue
-#Base:System/nfs-utils
-#Base:System/nfsidmap
-#network/smpppd
-
-
-# needed for polkit-default-privs to be in rpmlint, so that rpmlint doesn't
-# fail during build of systemd.
-#devel:openSUSE:Factory:rpmlint/rpmlint
-#devel:openSUSE:Factory:rpmlint/rpmlint-mini
+#Base:System/libpcap
 
 # networking tools
 #security:netfilter/iproute2
@@ -131,14 +109,14 @@ Base:System/libpcap
 #network/ypbind
 #openSUSE:Factory/liboauth
 #security/clamav
-openSUSE:Factory/vacuum-im
-openSUSE:Factory/vacuum-im-plugins-spellchecker
-openSUSE:Factory/vacuum-im-plugins-dbusnotifications
-openSUSE:Factory/vacuum-im-plugins-gmailnotify
-openSUSE:Factory/vacuum-im-plugins-kinotifications
+#openSUSE:Factory/vacuum-im
+#openSUSE:Factory/vacuum-im-plugins-spellchecker
+#openSUSE:Factory/vacuum-im-plugins-dbusnotifications
+#openSUSE:Factory/vacuum-im-plugins-gmailnotify
+#openSUSE:Factory/vacuum-im-plugins-kinotifications
 #network/libqxmpp1
 
-network:utilities/tcpdump
+#network:utilities/tcpdump
 
 #
 # Latest "stable" samba packages:
@@ -153,23 +131,23 @@ network:utilities/tcpdump
 # git is good
 #
 devel:tools:scm/git
-devel:tools:scm/tig
+#devel:tools:scm/tig
 
 # so is mercurial
 devel:tools:scm/mercurial
 
 # quilt is essencial
-devel:tools:scm/quilt
+#devel:tools:scm/quilt
 
 # kernel.org users need kup
-devel:tools/kup
+#devel:tools/kup
 
 #
 # filesystem fun
 #
-filesystems/fuse
-filesystems/btrfsprogs
-filesystems/e2fsprogs
+#filesystems/fuse
+#filesystems/btrfsprogs
+#filesystems/e2fsprogs
 
 #
 # Latest "stable" apache2
@@ -182,9 +160,9 @@ filesystems/e2fsprogs
 # Stuff requested by Greg KH <gregkh@suse.de> for stuff he uses
 # all the time
 #
-server:mail/offlineimap
-server:mail/mutt
-server:mail/imapfilter
+#server:mail/offlineimap
+#server:mail/mutt
+#server:mail/imapfilter
 
 # other mail stuff:
 #server:mail/tnef
@@ -199,21 +177,21 @@ server:mail/imapfilter
 
 
 # The R language stuff
-devel:languages:R:base/R
-devel:languages:R:supplement/rkward
+#devel:languages:R:base/R
+#devel:languages:R:supplement/rkward
 
 # graphic stuff
 #graphics/hugin
 #graphics/libpano
 #graphics/tclap
-graphics/darktable
+#graphics/darktable
 
 
 #
 # Editors, we can't live without them
 #
-editors/vim
-editors/vim-plugins
+#editors/vim
+#editors/vim-plugins
 #editors/nano
 #editors/emacs
 #editors/treeline
@@ -240,7 +218,7 @@ editors/vim-plugins
 # LibreOffice
 # see the libreoffice file
 # kdelibs3 needed for libreoffice package
-KDE:KDE3/kdelibs3
+#KDE:KDE3/kdelibs3
 
 
 #
@@ -271,9 +249,9 @@ KDE:KDE3/kdelibs3
 #multimedia:libs/usbmuxd
 #multimedia:libs/vcdimager
 
-multimedia:apps/clementine
+#multimedia:apps/clementine
 
-vdr/dvb
+#vdr/dvb
 
 # jack
 #multimedia:libs/jack
@@ -301,10 +279,10 @@ vdr/dvb
 #
 # osc tools
 #
-openSUSE:Tools/osc
-openSUSE:Tools/osc-source_validator
+#openSUSE:Tools/osc
+#openSUSE:Tools/osc-source_validator
 
-X11:common:Factory/xdg-utils
+#X11:common:Factory/xdg-utils
 
 #
 # lxde
@@ -334,8 +312,8 @@ X11:common:Factory/xdg-utils
 # Documentation tools
 #
 #Documentation:Tools/calibre
-openSUSE:Factory/python-cssutils
-openSUSE:Factory/calibre
+#openSUSE:Factory/python-cssutils
+#openSUSE:Factory/calibre
 
 #
 # Everyone likes games
@@ -343,11 +321,11 @@ openSUSE:Factory/calibre
 #games/bomberclone
 
 # window managers
-openSUSE:Factory/i3
-devel:languages:perl/perl-AnyEvent-I3
+#openSUSE:Factory/i3
+#devel:languages:perl/perl-AnyEvent-I3
 
 # exiftool
-openSUSE:Factory/perl-Image-ExifTool
+#openSUSE:Factory/perl-Image-ExifTool
 
 # graphic tools
 #openSUSE:Factory/gimp
@@ -358,38 +336,38 @@ openSUSE:Factory/perl-Image-ExifTool
 #KDE:Distro:Factory/libkvkontakte
 
 # Apparmor
-openSUSE:Factory/apparmor
+#openSUSE:Factory/apparmor
 
 #GNOME:Apps/shotwell
 
 #Emulators:Wine:STABLE/wine
 
-openSUSE:Factory/ext4magic
+#openSUSE:Factory/ext4magic
 
-Publishing/plotutils
-Publishing/gnuplot
+#Publishing/plotutils
+#Publishing/gnuplot
 
 # gcc?
 #devel:gcc/gcc46
 
 #lyx?
-Publishing/lyx
+#Publishing/lyx
 
-utilities/udev-browse
+#utilities/udev-browse
 
-network:utilities/nmap
+#network:utilities/nmap
 
-KDE:Distro:Factory/qutim
+#KDE:Distro:Factory/qutim
 
 # Virtualization stuff
-Virtualization/hyper-v
-Virtualization/spice
-Virtualization/spice-protocol
-Virtualization/libvirt
-Virtualization/libvirt-cim
-Virtualization/libvirt-glib
-Virtualization/kvm
-Virtualization/qemu
-Virtualization/virt-manager
-Virtualization/celt051
-Virtualization/python-virtinst
+#Virtualization/hyper-v
+#Virtualization/spice
+#Virtualization/spice-protocol
+#Virtualization/libvirt
+#Virtualization/libvirt-cim
+#Virtualization/libvirt-glib
+#Virtualization/kvm
+#Virtualization/qemu
+#Virtualization/virt-manager
+#Virtualization/celt051
+#Virtualization/python-virtinst
