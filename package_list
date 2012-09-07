@@ -83,7 +83,7 @@ Kernel:stable/kernel-firmware
 #Base:System/screen
 #Base:System/laptop-mode-tools
 #Base:System/pciutils
-#openSUSE:Factory/pciutils-ids
+openSUSE:Factory/pciutils-ids
 
 #Base:System/module-init-tools
 #Base:System/kmod
