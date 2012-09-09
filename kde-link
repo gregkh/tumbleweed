@@ -7,7 +7,9 @@ my $repository = "openSUSE:Tumbleweed:Testing";
 my %kde_sub_packages = (
 	"kdelibs4-apidocs" => "kdelibs4",
 	"libqt4-sql-plugins" => "libqt4",
-	"libqt4-devel-doc" => "libqt4"
+	"libqt4-devel-doc" => "libqt4",
+	"soprano-backend-sesame" => "soprano",
+	"soprano-backend-virtuoso" => "soprano"
 );
 
 foreach $sub_package (sort keys %kde_sub_packages){
