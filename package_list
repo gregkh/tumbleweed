@@ -31,7 +31,7 @@ openSUSE:Factory/preinstallimage-gtk2-devel
 # Kernel
 #
 # The kernel package has one main package:
-#Kernel:stable/kernel-source
+Kernel:stable/kernel-source
 # Then the rest of the kernel packages are just links to that one in
 # order to handle the multiple parts of it.  This means the following
 # list of packages should not be touched at all, they get automatically
@@ -55,7 +55,7 @@ Kernel:stable/kernel-firmware
 #openSUSE:11.4:Update/preload
 
 #devel:tools/systemtap
-#devel:tools/perf
+devel:tools/perf
 #devel:tools/patch
 #devel:tools/patchutils
 #devel:tools/diffstat
