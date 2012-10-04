@@ -54,7 +54,7 @@ Kernel:stable/kernel-source
 Kernel:stable/kernel-firmware
 #openSUSE:11.4:Update/preload
 
-#devel:tools/systemtap
+devel:tools/systemtap
 devel:tools/perf
 #devel:tools/patch
 #devel:tools/patchutils
@@ -98,9 +98,10 @@ Base:System/powertop
 #Base:System/mkinitrd
 
 # for tcpdump
-#Base:System/libpcap
+Base:System/libpcap
+network:utilities/tcpdump
 
-# networking tools
+# other networking tools
 #security:netfilter/iproute2
 #security:netfilter/iptables
 #network:utilities/ethtool
@@ -116,7 +117,6 @@ Base:System/powertop
 #openSUSE:Factory/vacuum-im-plugins-kinotifications
 #network/libqxmpp1
 
-#network:utilities/tcpdump
 
 #
 # Latest "stable" samba packages:
@@ -366,8 +366,8 @@ devel:tools:scm/mercurial
 #Virtualization/libvirt
 #Virtualization/libvirt-cim
 #Virtualization/libvirt-glib
-#Virtualization/kvm
-#Virtualization/qemu
+Virtualization/kvm
+Virtualization/qemu
 #Virtualization/virt-manager
 #Virtualization/celt051
 #Virtualization/python-virtinst
