@@ -85,8 +85,8 @@ devel:tools/perf
 #Base:System/pciutils
 openSUSE:Factory/pciutils-ids
 
-#Base:System/module-init-tools
-#Base:System/kmod
+Base:System/module-init-tools
+Base:System/kmod
 Base:System/powertop
 
 # Needed for gummiboot
