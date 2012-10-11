@@ -56,6 +56,7 @@ Kernel:stable/kernel-firmware
 
 devel:tools/systemtap
 devel:tools/perf
+devel:tools/trace-cmd
 #devel:tools/patch
 #devel:tools/patchutils
 #devel:tools/diffstat
