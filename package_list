@@ -132,7 +132,7 @@ network:utilities/tcpdump
 # git is good
 #
 devel:tools:scm/git
-#devel:tools:scm/tig
+devel:tools:scm/tig
 
 # so is mercurial
 devel:tools:scm/mercurial
