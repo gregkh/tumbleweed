@@ -162,7 +162,7 @@ filesystems/e2fsprogs
 # all the time
 #
 #server:mail/offlineimap
-#server:mail/mutt
+server:mail/mutt
 #server:mail/imapfilter
 
 # other mail stuff:
@@ -191,10 +191,10 @@ filesystems/e2fsprogs
 #
 # Editors, we can't live without them
 #
-#editors/vim
+editors/vim
 #editors/vim-plugins
 #editors/nano
-#editors/emacs
+editors/emacs
 #editors/treeline
 
 
