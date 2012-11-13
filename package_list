@@ -163,7 +163,7 @@ filesystems/e2fsprogs
 #
 #server:mail/offlineimap
 server:mail/mutt
-#server:mail/imapfilter
+server:mail/imapfilter
 
 # other mail stuff:
 #server:mail/tnef
