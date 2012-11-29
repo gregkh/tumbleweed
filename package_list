@@ -87,6 +87,7 @@ devel:tools/trace-cmd
 openSUSE:Factory/pciutils-ids
 
 Base:System/module-init-tools
+Base:System/suse-module-tools
 Base:System/kmod
 Base:System/powertop
 Base:System/make
