@@ -112,7 +112,7 @@ network:utilities/tcpdump
 #network:vpn/openvpn
 #network/ypbind
 #openSUSE:Factory/liboauth
-#security/clamav
+security/clamav
 #openSUSE:Factory/vacuum-im
 #openSUSE:Factory/vacuum-im-plugins-spellchecker
 #openSUSE:Factory/vacuum-im-plugins-dbusnotifications
