@@ -363,14 +363,15 @@ Documentation:Tools/calibre
 #KDE:Distro:Factory/qutim
 
 # Virtualization stuff
-#Virtualization/hyper-v
-#Virtualization/spice
-#Virtualization/spice-protocol
-#Virtualization/libvirt
-#Virtualization/libvirt-cim
-#Virtualization/libvirt-glib
+Virtualization/hyper-v
+Virtualization/spice
+Virtualization/spice-gtk
+Virtualization/spice-protocol
+Virtualization/libvirt
+Virtualization/libvirt-cim
+Virtualization/libvirt-glib
 Virtualization/kvm
 Virtualization/qemu
-#Virtualization/virt-manager
+Virtualization/virt-manager
 #Virtualization/celt051
 #Virtualization/python-virtinst
