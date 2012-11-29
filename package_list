@@ -314,7 +314,7 @@ editors/emacs
 #
 # Documentation tools
 #
-#Documentation:Tools/calibre
+Documentation:Tools/calibre
 #openSUSE:Factory/python-cssutils
 #openSUSE:Factory/calibre
 
