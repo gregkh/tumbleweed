@@ -254,7 +254,7 @@ editors/emacs
 
 #multimedia:apps/clementine
 
-#vdr/dvb
+vdr/dvb
 
 # jack
 #multimedia:libs/jack
