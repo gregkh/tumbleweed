@@ -373,5 +373,8 @@ Virtualization/libvirt-glib
 Virtualization/kvm
 Virtualization/qemu
 Virtualization/virt-manager
+
+# needed for spice-gtk
+hardware/usbredir
 #Virtualization/celt051
 #Virtualization/python-virtinst
