@@ -71,7 +71,7 @@ devel:tools/trace-cmd
 #
 #Base:System/dmidecode
 #Base:System/diffutils
-#Base:System/usbutils
+Base:System/usbutils
 #Base:System/tree
 #Base:System/findutils
 #Base:System/mc
