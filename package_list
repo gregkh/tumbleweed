@@ -258,6 +258,7 @@ editors/emacs
 #multimedia:apps/clementine
 
 vdr/dvb
+vdr/dtv-scan-tables
 
 # jack
 #multimedia:libs/jack
