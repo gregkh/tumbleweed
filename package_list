@@ -92,6 +92,8 @@ Base:System/kmod
 Base:System/powertop
 Base:System/make
 
+Base:System/plymouth
+
 # Needed for gummiboot
 #Base:System/gnu-efi
 #Base:System/elilo
