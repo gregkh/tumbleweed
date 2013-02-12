@@ -321,8 +321,7 @@ vdr/dtv-scan-tables
 # Documentation tools
 #
 Documentation:Tools/calibre
-#openSUSE:Factory/python-cssutils
-#openSUSE:Factory/calibre
+devel:languages:python/python-cssselect
 
 #
 # Everyone likes games
