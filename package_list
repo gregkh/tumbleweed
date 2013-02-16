@@ -89,6 +89,8 @@ openSUSE:Factory/pciutils-ids
 Base:System/module-init-tools
 Base:System/suse-module-tools
 Base:System/kmod
+Base:System/pesign
+Base:System/pesign-obs-integration
 Base:System/powertop
 Base:System/make
 
