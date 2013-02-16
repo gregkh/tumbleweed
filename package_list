@@ -118,6 +118,9 @@ network:utilities/tcpdump
 #openSUSE:Factory/liboauth
 security/clamav
 
+GNOME:Factory/PackageKit
+GNOME:Factory/PackageKit-Qt
+
 network/vacuum-im
 network/vacuum-im-plugins-dbusnotifications
 network/vacuum-im-plugins-gmailnotify
