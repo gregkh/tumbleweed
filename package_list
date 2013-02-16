@@ -89,6 +89,8 @@ openSUSE:Factory/pciutils-ids
 Base:System/module-init-tools
 Base:System/suse-module-tools
 Base:System/kmod
+Base:System/pesign
+Base:System/pesign-obs-integration
 Base:System/powertop
 Base:System/make
 
@@ -115,6 +117,9 @@ network:utilities/tcpdump
 #network/ypbind
 #openSUSE:Factory/liboauth
 security/clamav
+
+GNOME:Factory/PackageKit
+GNOME:Factory/PackageKit-Qt
 
 network/vacuum-im
 network/vacuum-im-plugins-dbusnotifications
