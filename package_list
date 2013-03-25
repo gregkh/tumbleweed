@@ -71,7 +71,7 @@ devel:tools/trace-cmd
 #
 #Base:System/dmidecode
 #Base:System/diffutils
-Base:System/usbutils
+#Base:System/usbutils
 #Base:System/tree
 #Base:System/findutils
 #Base:System/mc
@@ -84,17 +84,17 @@ Base:System/usbutils
 #Base:System/screen
 #Base:System/laptop-mode-tools
 #Base:System/pciutils
-openSUSE:Factory/pciutils-ids
+#openSUSE:Factory/pciutils-ids
 
-Base:System/module-init-tools
-Base:System/suse-module-tools
-Base:System/kmod
-Base:System/pesign
-Base:System/pesign-obs-integration
-Base:System/powertop
-Base:System/make
+#Base:System/module-init-tools
+#Base:System/suse-module-tools
+#Base:System/kmod
+#Base:System/pesign
+#Base:System/pesign-obs-integration
+#Base:System/powertop
+#Base:System/make
 
-Base:System/plymouth
+#Base:System/plymouth
 
 # Needed for gummiboot
 #Base:System/gnu-efi
@@ -105,8 +105,8 @@ Base:System/plymouth
 #Base:System/mkinitrd
 
 # for tcpdump
-Base:System/libpcap
-network:utilities/tcpdump
+#Base:System/libpcap
+#network:utilities/tcpdump
 
 # other networking tools
 #security:netfilter/iproute2
@@ -116,18 +116,18 @@ network:utilities/tcpdump
 #network:vpn/openvpn
 #network/ypbind
 #openSUSE:Factory/liboauth
-security/clamav
+#security/clamav
 
-GNOME:Factory/PackageKit
-GNOME:Factory/PackageKit-Qt
+#GNOME:Factory/PackageKit
+#GNOME:Factory/PackageKit-Qt
 
-network/vacuum-im
-network/vacuum-im-plugins-dbusnotifications
-network/vacuum-im-plugins-gmailnotify
-network/vacuum-im-plugins-kinotifications
-network/vacuum-im-plugins-spellchecker
-network/vacuum-im-plugins-usermood
-network/vacuum-im-plugins-usertune
+#network/vacuum-im
+#network/vacuum-im-plugins-dbusnotifications
+#network/vacuum-im-plugins-gmailnotify
+#network/vacuum-im-plugins-kinotifications
+#network/vacuum-im-plugins-spellchecker
+#network/vacuum-im-plugins-usermood
+#network/vacuum-im-plugins-usertune
 #network/libqxmpp1
 
 
@@ -144,10 +144,10 @@ network/vacuum-im-plugins-usertune
 # git is good
 #
 devel:tools:scm/git
-devel:tools:scm/tig
+#devel:tools:scm/tig
 
 # so is mercurial
-devel:tools:scm/mercurial
+#devel:tools:scm/mercurial
 
 # quilt is essencial
 #devel:tools:scm/quilt
@@ -159,8 +159,8 @@ devel:tools:scm/mercurial
 # filesystem fun
 #
 #filesystems/fuse
-filesystems/btrfsprogs
-filesystems/e2fsprogs
+#filesystems/btrfsprogs
+#filesystems/e2fsprogs
 
 #
 # Latest "stable" apache2
@@ -174,8 +174,8 @@ filesystems/e2fsprogs
 # all the time
 #
 #server:mail/offlineimap
-server:mail/mutt
-server:mail/imapfilter
+#server:mail/mutt
+#server:mail/imapfilter
 
 # other mail stuff:
 #server:mail/tnef
@@ -206,7 +206,7 @@ server:mail/imapfilter
 editors/vim
 #editors/vim-plugins
 #editors/nano
-editors/emacs
+#editors/emacs
 #editors/treeline
 
 
@@ -264,8 +264,8 @@ editors/emacs
 
 #multimedia:apps/clementine
 
-vdr/dvb
-vdr/dtv-scan-tables
+#vdr/dvb
+#vdr/dtv-scan-tables
 
 # jack
 #multimedia:libs/jack
@@ -325,8 +325,8 @@ vdr/dtv-scan-tables
 #
 # Documentation tools
 #
-Documentation:Tools/calibre
-devel:languages:python/python-cssselect
+#Documentation:Tools/calibre
+#devel:languages:python/python-cssselect
 
 #
 # Everyone likes games
@@ -373,19 +373,19 @@ devel:languages:python/python-cssselect
 #KDE:Distro:Factory/qutim
 
 # Virtualization stuff
-Virtualization/hyper-v
-Virtualization/spice
-Virtualization/spice-gtk
-Virtualization/spice-protocol
-Virtualization/libvirt
-Virtualization/libvirt-cim
-Virtualization/libvirt-glib
-Virtualization/kvm
-Virtualization/qemu
-Virtualization/virt-manager
-Virtualization/sanlock
+#Virtualization/hyper-v
+#Virtualization/spice
+#Virtualization/spice-gtk
+#Virtualization/spice-protocol
+#Virtualization/libvirt
+#Virtualization/libvirt-cim
+#Virtualization/libvirt-glib
+#Virtualization/kvm
+#Virtualization/qemu
+#Virtualization/virt-manager
+#Virtualization/sanlock
 
 # needed for spice-gtk
-hardware/usbredir
+#hardware/usbredir
 #Virtualization/celt051
 #Virtualization/python-virtinst
