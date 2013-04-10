@@ -334,8 +334,7 @@ editors/vim
 #games/bomberclone
 
 # window managers
-#openSUSE:Factory/i3
-#devel:languages:perl/perl-AnyEvent-I3
+X11:windowmanagers/i3
 
 # exiftool
 #openSUSE:Factory/perl-Image-ExifTool
