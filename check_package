@@ -26,6 +26,7 @@ TESTING_REPO="openSUSE:Tumbleweed:Testing"
 GNOME_REPO="openSUSE:Tumbleweed:GNOME"
 KDE_REPO="openSUSE:Tumbleweed:KDE"
 XFCE_REPO="openSUSE:Tumbleweed:xfce"
+LIBREOFFICE_REPO="openSUSE:Tumbleweed:Libreoffice"
 
 # expects:
 #	$PACKAGE to be set to the package name to be checked
@@ -86,6 +87,8 @@ while [ "$1" != "" ]; do
 		--xfce )	TUMBLE_REPO=$XFCE_REPO
 				;;
 		--testing )	TUMBLE_REPO=$TESTING_REPO
+				;;
+		--libreoffice )	TUMBLE_REPO=$LIBREOFFICE_REPO
 				;;
 		* )		FULL_PACKAGE=$1
 				;;
