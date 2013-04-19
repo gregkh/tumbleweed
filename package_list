@@ -204,9 +204,9 @@ devel:tools:scm/git
 # Editors, we can't live without them
 #
 editors/vim
-#editors/vim-plugins
+editors/vim-plugins
 #editors/nano
-#editors/emacs
+editors/emacs
 #editors/treeline
 
 
