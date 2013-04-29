@@ -390,3 +390,6 @@ X11:windowmanagers/i3status
 #hardware/usbredir
 #Virtualization/celt051
 #Virtualization/python-virtinst
+
+# kde needs this as the GNOME update brought in the NM update
+openSUSE:Factory/NetworkManager-kde4
