@@ -143,6 +143,7 @@ devel:tools/trace-cmd
 #
 # git is good
 #
+devel:tools:scm/cvsps2
 devel:tools:scm/git
 #devel:tools:scm/tig
 
