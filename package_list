@@ -75,7 +75,8 @@ devel:tools/trace-cmd
 #Base:System/tree
 #Base:System/findutils
 #Base:System/mc
-#Base:System/sparse
+#devel:tools/sparse
+#devel:tools/trinity
 #Base:System/file
 #Base:System/elfutils
 #Base:System/procps
@@ -91,7 +92,7 @@ devel:tools/trace-cmd
 #Base:System/kmod
 #Base:System/pesign
 #Base:System/pesign-obs-integration
-#Base:System/powertop
+Base:System/powertop
 #Base:System/make
 
 #Base:System/plymouth
