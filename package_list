@@ -75,8 +75,8 @@ devel:tools/trace-cmd
 #Base:System/tree
 #Base:System/findutils
 #Base:System/mc
-#devel:tools/sparse
-#devel:tools/trinity
+devel:tools/sparse
+devel:tools/trinity
 #Base:System/file
 #Base:System/elfutils
 #Base:System/procps
