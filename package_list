@@ -82,7 +82,8 @@ devel:tools/trinity
 #Base:System/procps
 #Base:System/microcode_ctl
 #Base:System/upower
-#Base:System/screen
+Base:System/screen
+devel:openSUSE:Factory/tmux
 #Base:System/laptop-mode-tools
 #Base:System/pciutils
 #openSUSE:Factory/pciutils-ids
