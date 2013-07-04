@@ -147,12 +147,11 @@ security/rkhunter
 #
 # git is good
 #
-devel:tools:scm/cvsps2
 devel:tools:scm/git
 #devel:tools:scm/tig
 
 # so is mercurial
-#devel:tools:scm/mercurial
+devel:tools:scm/mercurial
 
 # quilt is essencial
 #devel:tools:scm/quilt
@@ -164,8 +163,8 @@ devel:tools:scm/git
 # filesystem fun
 #
 #filesystems/fuse
-#filesystems/btrfsprogs
-#filesystems/e2fsprogs
+filesystems/btrfsprogs
+filesystems/e2fsprogs
 
 #
 # Latest "stable" apache2
