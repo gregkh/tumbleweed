@@ -119,6 +119,8 @@ Base:System/powertop
 #openSUSE:Factory/liboauth
 #security/clamav
 
+security/rkhunter
+
 #GNOME:Factory/PackageKit
 #GNOME:Factory/PackageKit-Qt
 
