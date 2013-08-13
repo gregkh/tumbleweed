@@ -243,6 +243,7 @@ editors/emacs
 #
 #multimedia:apps/awesfx
 multimedia:apps/clementine
+mobile:synchronization:FACTORY/libimobiledevice
 #multimedia:apps/hydrogen
 #multimedia:apps/vorbis-tools
 #multimedia:apps/mkvtoolnix
@@ -292,7 +293,6 @@ multimedia:apps/clementine
 #Banshee/dbus-sharp-glib
 #Mono/notify-sharp
 #multimedia:libs/libgpod
-#multimedia:libs/libimobiledevice
 #multimedia:libs/libplist
 
 #
