@@ -391,6 +391,7 @@ KDE:Distro:Factory/bluedevil
 #Virtualization/libvirt-glib
 Virtualization/kvm
 Virtualization/qemu
+Virtualization/xen
 #Virtualization/virt-manager
 #Virtualization/sanlock
 
