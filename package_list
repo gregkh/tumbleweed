@@ -382,13 +382,13 @@ KDE:Distro:Factory/bluedevil
 #KDE:Distro:Factory/qutim
 
 # Virtualization stuff
-#Virtualization/hyper-v
+Virtualization/hyper-v
 #Virtualization/spice
 #Virtualization/spice-gtk
 #Virtualization/spice-protocol
-#Virtualization/libvirt
-#Virtualization/libvirt-cim
-#Virtualization/libvirt-glib
+Virtualization/libvirt
+Virtualization/libvirt-cim
+#Virtualization/libvirt-glib	already getting new version from gnome repo
 Virtualization/kvm
 Virtualization/qemu
 Virtualization/xen
