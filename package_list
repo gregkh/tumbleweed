@@ -354,8 +354,8 @@ X11:windowmanagers/i3status
 ## needed by digikam
 #KDE:Distro:Factory/libkvkontakte
 
-KDE:Distro:Factory/libbluedevil
-KDE:Distro:Factory/bluedevil
+#KDE:Distro:Factory/libbluedevil
+#KDE:Distro:Factory/bluedevil
 
 # Apparmor
 #openSUSE:Factory/apparmor
@@ -401,4 +401,4 @@ Virtualization/xen
 #Virtualization/python-virtinst
 
 # kde needs this as the GNOME update brought in the NM update
-openSUSE:Factory/NetworkManager-kde4
+#openSUSE:Factory/NetworkManager-kde4
