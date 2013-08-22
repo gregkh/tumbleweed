@@ -188,6 +188,13 @@ server:mail/imapfilter
 #server:mail/dovecot12
 
 #
+# Stuff requested by Jiri Slaby <jslaby@suse.cz> for stuff he uses
+# all the time
+#
+
+hardware/acpica
+
+#
 # Publishing tools
 #
 #Publishing/texmaker
