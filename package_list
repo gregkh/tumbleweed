@@ -243,7 +243,7 @@ editors/emacs
 #
 #multimedia:apps/awesfx
 multimedia:apps/clementine
-mobile:synchronization:FACTORY/libimobiledevice
+#mobile:synchronization:FACTORY/libimobiledevice # breaks gvfs :(
 #multimedia:apps/hydrogen
 #multimedia:apps/vorbis-tools
 #multimedia:apps/mkvtoolnix
@@ -354,8 +354,8 @@ X11:windowmanagers/i3status
 ## needed by digikam
 #KDE:Distro:Factory/libkvkontakte
 
-KDE:Distro:Factory/libbluedevil
-KDE:Distro:Factory/bluedevil
+#KDE:Distro:Factory/libbluedevil
+#KDE:Distro:Factory/bluedevil
 
 # Apparmor
 #openSUSE:Factory/apparmor
@@ -382,15 +382,16 @@ KDE:Distro:Factory/bluedevil
 #KDE:Distro:Factory/qutim
 
 # Virtualization stuff
-#Virtualization/hyper-v
+Virtualization/hyper-v
 #Virtualization/spice
 #Virtualization/spice-gtk
 #Virtualization/spice-protocol
-#Virtualization/libvirt
-#Virtualization/libvirt-cim
-#Virtualization/libvirt-glib
+Virtualization/libvirt
+Virtualization/libvirt-cim
+#Virtualization/libvirt-glib	already getting new version from gnome repo
 Virtualization/kvm
 Virtualization/qemu
+Virtualization/xen
 #Virtualization/virt-manager
 #Virtualization/sanlock
 
@@ -400,4 +401,4 @@ Virtualization/qemu
 #Virtualization/python-virtinst
 
 # kde needs this as the GNOME update brought in the NM update
-openSUSE:Factory/NetworkManager-kde4
+#openSUSE:Factory/NetworkManager-kde4
