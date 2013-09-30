@@ -208,7 +208,7 @@ hardware/acpica
 #graphics/hugin
 #graphics/libpano
 #graphics/tclap
-#graphics/darktable
+graphics/darktable
 
 
 #
