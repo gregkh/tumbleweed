@@ -66,6 +66,8 @@ devel:tools/trace-cmd
 #devel:tools/wiggle
 #devel:tools/ccache
 
+network:ha-clustering:Factory/drbd
+
 #
 # Packages linked from Base:System:
 #
