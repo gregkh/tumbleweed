@@ -195,6 +195,7 @@ server:mail/imapfilter
 #
 
 hardware/acpica
+hardware/usb_modeswitch
 
 #
 # Publishing tools
