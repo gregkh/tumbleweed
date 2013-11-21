@@ -32,7 +32,7 @@ openSUSE:Factory/preinstallimage-xorg-x11-devel
 # Kernel
 #
 # The kernel package has one main package:
-Kernel:stable/kernel-source
+#Kernel:stable/kernel-source
 # Then the rest of the kernel packages are just links to that one in
 # order to handle the multiple parts of it.  This means the following
 # list of packages should not be touched at all, they get automatically
@@ -52,12 +52,12 @@ Kernel:stable/kernel-source
 #
 # Run the kernel-link script to generate these if needed.
 
-Kernel:stable/kernel-firmware
+#Kernel:stable/kernel-firmware
 #openSUSE:11.4:Update/preload
 
-devel:tools/systemtap
-devel:tools/perf
-devel:tools/trace-cmd
+#devel:tools/systemtap
+#devel:tools/perf
+#devel:tools/trace-cmd
 #devel:tools/patch
 #devel:tools/patchutils
 #devel:tools/diffstat
@@ -67,7 +67,7 @@ devel:tools/trace-cmd
 #devel:tools/wiggle
 #devel:tools/ccache
 
-network:ha-clustering:Factory/drbd
+#network:ha-clustering:Factory/drbd
 
 #
 # Packages linked from Base:System:
@@ -78,15 +78,15 @@ network:ha-clustering:Factory/drbd
 #Base:System/tree
 #Base:System/findutils
 #Base:System/mc
-devel:tools/sparse
-devel:tools/trinity
+#devel:tools/sparse
+#devel:tools/trinity
 #Base:System/file
 #Base:System/elfutils
 #Base:System/procps
 #Base:System/microcode_ctl
 #Base:System/upower
-Base:System/screen
-devel:openSUSE:Factory/tmux
+#Base:System/screen
+#devel:openSUSE:Factory/tmux
 #Base:System/laptop-mode-tools
 #Base:System/pciutils
 #openSUSE:Factory/pciutils-ids
@@ -96,7 +96,7 @@ devel:openSUSE:Factory/tmux
 #Base:System/kmod
 #Base:System/pesign
 #Base:System/pesign-obs-integration
-Base:System/powertop
+#Base:System/powertop
 #Base:System/make
 
 #Base:System/plymouth
@@ -123,7 +123,7 @@ Base:System/powertop
 #openSUSE:Factory/liboauth
 #security/clamav
 
-security/rkhunter
+#security/rkhunter
 
 #GNOME:Factory/PackageKit
 #GNOME:Factory/PackageKit-Qt
@@ -154,7 +154,7 @@ devel:tools:scm/git
 #devel:tools:scm/tig
 
 # so is mercurial
-devel:tools:scm/mercurial
+#devel:tools:scm/mercurial
 
 # quilt is essencial
 #devel:tools:scm/quilt
@@ -166,8 +166,8 @@ devel:tools:scm/mercurial
 # filesystem fun
 #
 #filesystems/fuse
-filesystems/btrfsprogs
-filesystems/e2fsprogs
+#filesystems/btrfsprogs
+#filesystems/e2fsprogs
 
 #
 # Latest "stable" apache2
@@ -182,7 +182,7 @@ filesystems/e2fsprogs
 #
 #server:mail/offlineimap
 #server:mail/mutt
-server:mail/imapfilter
+#server:mail/imapfilter
 
 # other mail stuff:
 #server:mail/tnef
@@ -195,8 +195,8 @@ server:mail/imapfilter
 # all the time
 #
 
-hardware/acpica
-hardware/usb_modeswitch
+#hardware/acpica
+#hardware/usb_modeswitch
 
 #
 # Publishing tools
@@ -212,7 +212,7 @@ hardware/usb_modeswitch
 #graphics/hugin
 #graphics/libpano
 #graphics/tclap
-graphics/darktable
+#graphics/darktable
 
 
 #
@@ -221,7 +221,7 @@ graphics/darktable
 editors/vim
 editors/vim-plugins
 #editors/nano
-editors/emacs
+#editors/emacs
 #editors/treeline
 
 
@@ -253,7 +253,7 @@ editors/emacs
 # Multimedia stuff requested by Takashi and others
 #
 #multimedia:apps/awesfx
-multimedia:apps/clementine
+#multimedia:apps/clementine
 #mobile:synchronization:FACTORY/libimobiledevice # breaks gvfs :(
 #multimedia:apps/hydrogen
 #multimedia:apps/vorbis-tools
@@ -350,9 +350,9 @@ multimedia:apps/clementine
 #games/bomberclone
 
 # window managers
-X11:windowmanagers/i3
-X11:windowmanagers/i3lock
-X11:windowmanagers/i3status
+#X11:windowmanagers/i3
+#X11:windowmanagers/i3lock
+#X11:windowmanagers/i3status
 
 # exiftool
 #openSUSE:Factory/perl-Image-ExifTool
@@ -380,9 +380,6 @@ X11:windowmanagers/i3status
 #Publishing/plotutils
 #Publishing/gnuplot
 
-# gcc?
-#devel:gcc/gcc46
-
 #lyx?
 #Publishing/lyx
 
@@ -393,16 +390,16 @@ X11:windowmanagers/i3status
 #KDE:Distro:Factory/qutim
 
 # Virtualization stuff
-Virtualization/hyper-v
+#Virtualization/hyper-v
 #Virtualization/spice
 #Virtualization/spice-gtk
 #Virtualization/spice-protocol
-Virtualization/libvirt
-Virtualization/libvirt-cim
+#Virtualization/libvirt
+#Virtualization/libvirt-cim
 #Virtualization/libvirt-glib	already getting new version from gnome repo
-Virtualization/kvm
-Virtualization/qemu
-Virtualization/xen
+#Virtualization/kvm
+#Virtualization/qemu
+#Virtualization/xen
 #Virtualization/virt-manager
 #Virtualization/sanlock
 
