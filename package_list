@@ -20,7 +20,7 @@
 # Kernel
 #
 # The kernel package has one main package:
-#Kernel:stable/kernel-source
+Kernel:stable/kernel-source
 # Then the rest of the kernel packages are just links to that one in
 # order to handle the multiple parts of it.  This means the following
 # list of packages should not be touched at all, they get automatically
