@@ -398,3 +398,13 @@ editors/vim-plugins
 
 # kde needs this as the GNOME update brought in the NM update
 #openSUSE:Factory/NetworkManager-kde4
+
+# Some python packages requested:
+devel:languages:python/python-matplotlib
+devel:languages:python3/python3-matplotlib
+devel:languages:python3/python3-numpy
+devel:languages:python3/python3-numpy-doc
+devel:languages:python/python-numpy
+devel:languages:python/python-numpy-doc
+devel:languages:python/python-scipy
+devel:languages:python3/python3-CXX
