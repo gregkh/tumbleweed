@@ -402,11 +402,15 @@ editors/vim-plugins
 # Some python packages requested:
 devel:languages:python/python-matplotlib
 devel:languages:python3/python3-matplotlib
-devel:languages:python3/python3-numpy
-devel:languages:python3/python3-numpy-doc
 devel:languages:python/python-numpy
+devel:languages:python3/python3-numpy
 devel:languages:python/python-numpy-doc
+devel:languages:python3/python3-numpy-doc
 devel:languages:python/python-scipy
+devel:languages:python3/python3-scipy
+devel:languages:python/python-sympy
+devel:languages:python3/python3-sympy
+devel:languages:python/python-CXX
 devel:languages:python3/python3-CXX
 devel:languages:python/python-pylint
 devel:languages:python3/python3-pylint
