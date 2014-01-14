@@ -20,6 +20,8 @@
 
 OSC_API="https://api.opensuse.org"
 
+PREPEND=""
+
 # Main Tumbleweed repository location
 TUMBLE_REPO="openSUSE:Tumbleweed"
 
@@ -95,6 +97,9 @@ while [ "$1" != "" ]; do
 		--api )		shift
 				OSC_API="$1"
 				;;
+		--prepend )	shift
+				PREPEND="$1"
+				;;
 		* )		FULL_PACKAGE=$1
 				;;
 	esac
@@ -106,7 +111,7 @@ done
 
 
 # I'm sure that bash regex can do this better, but hey, this works...
-REPO=`echo $FULL_PACKAGE | cut -f 1 -d '/'`
+REPO=$PREPEND`echo $FULL_PACKAGE | cut -f 1 -d '/'`
 PACKAGE=`echo $FULL_PACKAGE | cut -f 2 -d '/'`
 #echo $REPO
 #echo $PACKAGE

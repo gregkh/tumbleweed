@@ -22,6 +22,8 @@
 
 OSC_API=""
 
+PREPEND=""
+
 # Default package list filename.  Override it on the command line
 # if you want something else
 FILE="package_list"
@@ -47,6 +49,9 @@ while [ "$1" != "" ]; do
 		--api )		shift
 				OSC_API="--api $1"
 				;;
+		--prepend )	shift
+				PREPEND="--prepend $1"
+				;;
 		* )		FILE=$1
 				;;
 	esac
@@ -64,6 +69,6 @@ do
 	fi
 	if [ "$line" != "" ]
 	then
-		./check_package $OSC_API --repo $REPO $line
+		./check_package $OSC_API $PREPEND --repo $REPO $line
 	fi
 done < $FILE
