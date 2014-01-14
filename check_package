@@ -18,6 +18,8 @@
 #	Greg Kroah-Hartman <gregkh@suse.de>
 #
 
+OSC_API="https://api.opensuse.org"
+
 # Main Tumbleweed repository location
 TUMBLE_REPO="openSUSE:Tumbleweed"
 
@@ -33,8 +35,8 @@ LIBREOFFICE_REPO="openSUSE:Tumbleweed:Libreoffice"
 #	$REPO to be set to the base repo name
 compare_version() {
 
-#	BASE_LINK=`osc log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
-	BASE_LINK=`osc api /source/${REPO}/${PACKAGE}?expand=1 | sed -n 's@^.*directory.*srcmd5="\([0-9a-f]*\)".*$@\1@ p'`
+#	BASE_LINK=`osc -A "$OSC_API" log --csv $REPO/$PACKAGE 2> /dev/null | head -n 1 | cut -f 4 -d '|'`
+	BASE_LINK=`osc -A "$OSC_API" api /source/${REPO}/${PACKAGE}?expand=1 | sed -n 's@^.*directory.*srcmd5="\([0-9a-f]*\)".*$@\1@ p'`
 	#echo $BASE_LINK
 
 	if [ "$BASE_LINK" = "" ]
@@ -43,16 +45,16 @@ compare_version() {
 		exit 1
 	fi
 
-	#TUMBLE_LINK=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
-	TUMBLE_LINK=`osc cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | sed -n 's@^.*package.*rev="\([0-9a-f]*\)".*$@\1@ p'`
+	#TUMBLE_LINK=`osc -A "$OSC_API" cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | grep rev | cut -f 4 -d ' ' | cut -f 2 -d '=' | cut -f 1 -d '=' | sed -e 's/\"//g'`
+	TUMBLE_LINK=`osc -A "$OSC_API" cat $TUMBLE_REPO/$PACKAGE/_link 2> /dev/null | sed -n 's@^.*package.*rev="\([0-9a-f]*\)".*$@\1@ p'`
 	#echo $TUMBLE_LINK
 	if [ "$TUMBLE_LINK" = "" ]
 	then
-		EXIST=`osc ls $TUMBLE_REPO | grep "^${PACKAGE}$"`
+		EXIST=`osc -A "$OSC_API" ls $TUMBLE_REPO | grep "^${PACKAGE}$"`
 		if [ "$EXIST" = "" ]
 		then
 			echo "# $PACKAGE is not in $TUMBLE_REPO, add it by doing:"
-			echo "osc linkpac -f -r $BASE_LINK $REPO $PACKAGE $TUMBLE_REPO"
+			echo "osc -A "$OSC_API" linkpac -f -r $BASE_LINK $REPO $PACKAGE $TUMBLE_REPO"
 		else
 			echo "# $PACKAGE is not a linked package in $TUMBLE_REPO, to overwrite the link, do:"
 		fi
@@ -62,8 +64,8 @@ compare_version() {
 	then
 		echo "# $PACKAGE is up to date."
 	else
-		#echo "osc linkpac -f -r $BASE_LINK $REPO $PACKAGE $TUMBLE_REPO"
-		echo "osc setlinkrev -r $BASE_LINK $TUMBLE_REPO $PACKAGE"
+		#echo "osc -A "$OSC_API" linkpac -f -r $BASE_LINK $REPO $PACKAGE $TUMBLE_REPO"
+		echo "osc -A "$OSC_API" setlinkrev -r $BASE_LINK $TUMBLE_REPO $PACKAGE"
 	fi
 }
 
@@ -89,6 +91,9 @@ while [ "$1" != "" ]; do
 		--testing )	TUMBLE_REPO=$TESTING_REPO
 				;;
 		--libreoffice )	TUMBLE_REPO=$LIBREOFFICE_REPO
+				;;
+		--api )		shift
+				OSC_API="$1"
 				;;
 		* )		FULL_PACKAGE=$1
 				;;
