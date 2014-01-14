@@ -385,8 +385,7 @@ editors/vim-plugins
 #Virtualization/libvirt
 #Virtualization/libvirt-cim
 #Virtualization/libvirt-glib	already getting new version from gnome repo
-#Virtualization/kvm
-#Virtualization/qemu
+Virtualization/qemu
 #Virtualization/xen
 #Virtualization/virt-manager
 #Virtualization/sanlock
