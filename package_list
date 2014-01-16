@@ -77,6 +77,7 @@ Kernel:stable/kernel-source
 #devel:openSUSE:Factory/tmux
 #Base:System/laptop-mode-tools
 #Base:System/pciutils
+Base:System/fxload
 #openSUSE:Factory/pciutils-ids
 
 #Base:System/module-init-tools
