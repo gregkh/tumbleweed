@@ -1,3 +1,5 @@
+LibreOffice:Stable/libixion
+LibreOffice:Stable/liborcus
 LibreOffice:Stable/libreoffice
 #LibreOffice:Stable/libreoffice-branding-SLED
 LibreOffice:Stable/libreoffice-branding-openSUSE
@@ -25,6 +27,7 @@ LibreOffice:Stable/libstlport_gcc4
 #LibreOffice:Stable/libvoikko
 #LibreOffice:Stable/malaga
 #LibreOffice:Stable/malaga-suomi
+LibreOffice:Stable/mdds
 LibreOffice:Stable/myspell-dictionaries
 LibreOffice:Stable/myspell-german-old
 LibreOffice:Stable/myspell-portuguese-preao

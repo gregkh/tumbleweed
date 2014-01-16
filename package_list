@@ -184,7 +184,7 @@ server:mail/imapfilter
 # all the time
 #
 
-#hardware/acpica
+hardware/acpica
 #hardware/usb_modeswitch
 
 #
@@ -386,8 +386,7 @@ editors/vim-plugins
 #Virtualization/libvirt
 #Virtualization/libvirt-cim
 #Virtualization/libvirt-glib	already getting new version from gnome repo
-#Virtualization/kvm
-#Virtualization/qemu
+Virtualization/qemu
 #Virtualization/xen
 #Virtualization/virt-manager
 #Virtualization/sanlock
