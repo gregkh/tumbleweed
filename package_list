@@ -69,7 +69,7 @@ Kernel:stable/kernel-source
 #devel:tools/sparse
 #devel:tools/trinity
 #Base:System/file
-#Base:System/elfutils
+Base:System/elfutils
 #Base:System/procps
 #Base:System/microcode_ctl
 #Base:System/upower
