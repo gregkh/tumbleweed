@@ -82,7 +82,7 @@ Base:System/fxload
 
 #Base:System/module-init-tools
 #Base:System/suse-module-tools
-#Base:System/kmod
+Base:System/kmod
 #Base:System/pesign
 #Base:System/pesign-obs-integration
 #Base:System/powertop
