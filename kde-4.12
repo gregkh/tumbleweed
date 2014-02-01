@@ -10,7 +10,6 @@ KDE:Release:412/kate
 KDE:Release:412/kdeartwork4
 KDE:Release:412/kdebase4
 KDE:Release:412/kdebase4-artwork
-KDE:Release:412/kdebase4-openSUSE_12.3
 KDE:Release:412/kdebase4-runtime
 KDE:Release:412/kdebase4-session
 KDE:Release:412/kdebase4-workspace
@@ -107,7 +106,6 @@ KDE:Release:412/ark
 KDE:Release:412/blinken
 KDE:Release:412/bomber
 KDE:Release:412/bovo
-KDE:Release:412/branding-openSUSE_12.3
 KDE:Release:412/cantor
 KDE:Release:412/cervisia
 KDE:Release:412/dolphin-plugins
