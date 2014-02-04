@@ -1,6 +1,9 @@
 # needed for branding packages below
 Base:System/branding-openSUSE
 
+# needed for kdebase_runtime as of 4.12.2
+network:synchronization:files/libssh
+
 # kde core
 KDE:Release:412/akonadi-runtime
 KDE:Release:412/attica
