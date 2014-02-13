@@ -105,6 +105,7 @@ Base:System/kmod
 # other networking tools
 #security:netfilter/iproute2
 #security:netfilter/iptables
+security:netfilter/xtables-addons
 #network:utilities/ethtool
 #network/unison
 #network:vpn/openvpn
