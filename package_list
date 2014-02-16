@@ -340,9 +340,10 @@ editors/vim-plugins
 #games/bomberclone
 
 # window managers
-#X11:windowmanagers/i3
-#X11:windowmanagers/i3lock
-#X11:windowmanagers/i3status
+X11:windowmanagers/i3
+X11:windowmanagers/i3lock
+X11:windowmanagers/i3status
+X11:XOrg/xcb-util-cursor
 
 # exiftool
 #openSUSE:Factory/perl-Image-ExifTool
