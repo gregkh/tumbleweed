@@ -223,7 +223,7 @@ editors/vim-plugins
 #
 ##Base:System/hdparm
 #Base:System/parted
-#Base:System/util-linux
+Base:System/util-linux
 #devel:tools:building/cmake
 #devel:tools:building/cmake-gui
 ##Base:System/sysstat
