@@ -424,4 +424,6 @@ devel:languages:python/python-opengl
 devel:languages:python3/python3-opengl
 devel:languages:python/python-astroid
 devel:languages:python3/python3-astroid
+devel:languages:python/python-docopt
+devel:languages:python3/python3-docopt
 
