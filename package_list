@@ -269,7 +269,7 @@ Base:System/util-linux
 #multimedia:libs/usbmuxd
 #multimedia:libs/vcdimager
 
-#multimedia:apps/clementine
+multimedia:apps/clementine
 
 #vdr/dvb
 #vdr/dtv-scan-tables
