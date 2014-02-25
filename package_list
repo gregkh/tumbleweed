@@ -299,8 +299,7 @@ multimedia:apps/clementine
 #
 # osc tools
 #
-#openSUSE:Tools/osc
-#openSUSE:Tools/osc-source_validator
+openSUSE:Tools/osc
 
 #X11:common:Factory/xdg-utils
 
