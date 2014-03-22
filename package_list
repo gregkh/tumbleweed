@@ -391,6 +391,7 @@ Virtualization/qemu
 #Virtualization/xen
 #Virtualization/virt-manager
 #Virtualization/sanlock
+Virtualization/lxc
 
 # needed for spice-gtk
 #hardware/usbredir
