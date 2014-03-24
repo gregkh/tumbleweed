@@ -389,7 +389,7 @@ X11:XOrg/xcb-util-cursor
 #Virtualization/libvirt-glib	already getting new version from gnome repo
 Virtualization/qemu
 #Virtualization/xen
-#Virtualization/virt-manager
+Virtualization/virt-manager
 #Virtualization/sanlock
 
 # needed for spice-gtk
