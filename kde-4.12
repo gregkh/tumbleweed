@@ -54,8 +54,6 @@ KDE:Qt/libqca2
 KDE:Qt/libqjson
 KDE:Qt/libdbusmenu-qt
 KDE:Qt/python-qscintilla
-KDE:Qt/python-qt4
-KDE:Qt/python-sip
 KDE:Qt/qscintilla
 KDE:Qt/qt-creator
 KDE:Qt/libQtWebKit4
