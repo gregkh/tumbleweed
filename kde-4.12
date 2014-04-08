@@ -1,5 +1,6 @@
 # needed for branding packages below
-Base:System/branding-openSUSE
+#Base:System/branding-openSUSE
+# Nope, that broke, stick with what I copied in by hand...
 
 # needed for kdebase_runtime as of 4.12.2
 network:synchronization:files/libssh
@@ -135,7 +136,7 @@ KDE:Current/kcalc
 KDE:Current/kcharselect
 KDE:Current/kcolorchooser
 KDE:Current/kcron
-KDE:Current/kde-branding-openSUSE
+#KDE:Current/kde-branding-openSUSE
 KDE:Current/kde-dev-utils
 KDE:Current/kde-mplayer-thumbnailer
 KDE:Current/kde4-print-manager
