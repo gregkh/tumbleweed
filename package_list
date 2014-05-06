@@ -155,9 +155,9 @@ devel:tools:scm/git
 #
 # filesystem fun
 #
-#filesystems/fuse
-#filesystems/btrfsprogs
-#filesystems/e2fsprogs
+filesystems/fuse
+filesystems/btrfsprogs
+filesystems/e2fsprogs
 
 #
 # Latest "stable" apache2
