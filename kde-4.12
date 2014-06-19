@@ -4,11 +4,14 @@
 
 # needed for kdebase_runtime as of 4.12.2
 network:synchronization:files/libssh
+# needed for baloo
+server:search/xapian-core
 
 # kde core
 KDE:Current/akonadi-runtime
 KDE:Current/attica
-KDE:Extra/ebook-tools
+KDE:Current/baloo
+KDE:Current/grantlee
 KDE:Current/kactivities4
 KDE:Current/kate
 KDE:Current/kdeartwork4
@@ -26,17 +29,21 @@ KDE:Current/kdelibs4
 KDE:Current/kdepimlibs4
 KDE:Current/kdepim4
 KDE:Current/kdepim4-runtime
-KDE:Extra/kdesvn
-KDE:Extra/kdevplatform
 KDE:Current/kdewebdev4
 KDE:Current/kde4-filesystem
 KDE:Current/kde4-l10n
+KDE:Current/kfilemetadata
 KDE:Current/kross-interpreters
 KDE:Current/kscreen
+KDE:Current/libbaloowidgets
 KDE:Current/libkexiv2
 KDE:Current/libkfbapi
+KDE:Current/libkgapi
+KDE:Current/libkolab
+KDE:Current/libkolabxml
 KDE:Current/libkscreen
 KDE:Current/libnepomukwidgets
+KDE:Current/libprison
 KDE:Current/mono-kde4
 KDE:Current/nepomuk-core
 KDE:Current/okular
@@ -47,6 +54,10 @@ KDE:Current/python-kde4
 KDE:Current/ruby-kde4
 KDE:Current/shared-desktop-ontologies
 KDE:Current/soprano
+KDE:Current/strigi
+KDE:Extra/ebook-tools
+KDE:Extra/kdesvn
+KDE:Extra/kdevplatform
 
 # qt libraries
 KDE:Qt/Botan
@@ -54,8 +65,6 @@ KDE:Qt/libqt4
 KDE:Qt/libqca2
 KDE:Qt/libqjson
 KDE:Qt/libdbusmenu-qt
-KDE:Qt/python-qscintilla
-KDE:Qt/qscintilla
 KDE:Qt/qt-creator
 KDE:Qt/libQtWebKit4
 KDE:Qt/qt4-qtscript
@@ -105,6 +114,7 @@ KDE:Current/NetworkManager-kde4
 KDE:Current/amor
 KDE:Current/analitza
 KDE:Current/ark
+KDE:Current/artikulate
 KDE:Current/blinken
 KDE:Current/bomber
 KDE:Current/bovo
@@ -136,7 +146,7 @@ KDE:Current/kcalc
 KDE:Current/kcharselect
 KDE:Current/kcolorchooser
 KDE:Current/kcron
-#KDE:Current/kde-branding-openSUSE
+KDE:Current/kde-branding-openSUSE
 KDE:Current/kde-dev-utils
 KDE:Current/kde-mplayer-thumbnailer
 KDE:Current/kde4-print-manager
@@ -187,6 +197,7 @@ KDE:Current/konsole
 KDE:Current/kopete
 KDE:Current/kpat
 KDE:Current/kppp
+KDE:Current/kqtquickcharts
 KDE:Current/krdc
 KDE:Current/kremotecontrol
 KDE:Current/kreversi
