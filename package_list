@@ -344,6 +344,8 @@ X11:windowmanagers/i3lock
 X11:windowmanagers/i3status
 X11:XOrg/xcb-util-cursor
 
+X11:Utilities/xscreensaver
+
 # exiftool
 #openSUSE:Factory/perl-Image-ExifTool
 
